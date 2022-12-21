@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Hack for redirecting to SPA on github pages. Used by the 404.html page -->
+    <!-- <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script> -->
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://moneyflow-group.github.io/moneyflow-style-guide-v2/dist/static/logos/logo--favicon--white--dotted.svg" />
+    <link rel="stylesheet" href="/src/assets/mf-style-guide/dist/mf.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moneyflow styleguide v2 docs</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

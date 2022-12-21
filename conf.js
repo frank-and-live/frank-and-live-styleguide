@@ -1,0 +1,1 @@
+module.exports = { MAIN_BUILD_FILENAME: 'mf' }

@@ -1,0 +1,52 @@
+// What we take from Bootstrap
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+
+$spacer: 16px;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  80: $spacer * 5,
+);
+@import '../../node_modules/bootstrap/scss/utilities';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/offcanvas';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/helpers';
+
+@import '../../node_modules/bootstrap/scss/nav';
+
+$navbar-padding-y: 12px;
+$navbar-padding-x: 40px;
+$navbar-nav-link-padding-x: 12px;
+// $nav-link-padding-y: 0;
+$navbar-brand-padding-y: 0;
+$navbar-light-color: #252525; // Hardcoded as our colors are imported later
+$navbar-light-active-color: #0023f5; // Hardcoded as our colors are imported later
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import '../../node_modules/bootstrap/scss/utilities/api';
+
+
+// Our styles
+@import 'badge';
+@import 'buttons';
+@import 'checks';
+@import 'colors';
+@import 'helpers';
+@import 'inputs';
+@import 'interactions';
+@import 'selects';
+@import 'shadows';
+@import 'tables';
+@import 'text';

@@ -1,0 +1,49 @@
+@use './lib/mixins';
+
+$transition-props: (
+  'all',
+  'height',
+  'max-height',
+  'max-width',
+  'opacity',
+  'width'
+);
+$transition-times: (
+  '250ms',
+  '300ms',
+  '350ms',
+  '400ms',
+  '450ms',
+  '500ms',
+  '600ms',
+  '700ms',
+  '800ms',
+  '900ms',
+  '1000ms',
+  '2000ms',
+  '3000ms',
+  '4000ms',
+  '5000ms'
+);
+
+@each $prop in $transition-props {
+  @each $time in $transition-times {
+    @include mixins.mf-generate-transition($prop, $time);
+  }
+}
+
+.mf-btn-reset:active,
+.mf-btn-reset:focus,
+.mf-text-reset:active,
+.mf-text-reset:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.z-up {
+  z-index: 9999;
+}
+
+.z-more-up {
+  z-index: 99999;
+}

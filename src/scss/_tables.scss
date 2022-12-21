@@ -1,0 +1,113 @@
+@use 'sass:map';
+
+.mf-table {
+  --mf-table-color: inherit;
+  --mf-table-bg: var(--mf-color-white);
+  --mf-table-border-color: var(--mf-color-grey-300);
+  --mf-table-accent-bg: var(--mf-color-white);
+  --mf-table-striped-color: var(--mf-color-grey-500);
+  --mf-table-striped-bg: var(--mf-color-grey-500);
+  --mf-table-active-color: inherit;
+  --mf-table-active-bg: var(--mf-color-grey-300);
+  --mf-table-hover-color: inherig;
+  --mf-table-hover-bg: var(--mf-color-grey-300);
+
+  width: 100%;
+  margin-bottom: 0;
+  color: var(--mf-table-color);
+  vertical-align: middle;
+  border-color: var(--mf-table-border-color);
+
+  // Target th & td
+  // We need the child combinator to prevent styles leaking to nested tables which doesn't have a `.mf-table` class.
+  // We use the universal selectors here to simplify the selector (else we would need 6 different selectors).
+  // Another advantage is that this generates less code and makes the selector less specific making it easier to override.
+  // stylelint-disable-next-line selector-max-universal
+  > :not(caption) > * > * {
+    padding: 16px;
+    background-color: var(--mf-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--mf-table-accent-bg);
+  }
+
+  > tbody {
+    vertical-align: inherit;
+  }
+
+  > thead {
+    vertical-align: inherit;
+    border-color: var(--mf-color-grey-500);
+  }
+}
+
+//
+// Change placement of captions with a class
+//
+
+.caption-top {
+  caption-side: top;
+}
+
+
+//
+// Condensed table w/ half padding
+//
+
+.mf-table-sm {
+  // stylelint-disable-next-line selector-max-universal
+  > :not(caption) > * > * {
+    padding: 8px;
+  }
+}
+
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+//
+// When borders are added on all sides of the cells, the corners can render odd when
+// these borders do not have the same color or if they are semi-transparent.
+// Therefor we add top and border bottoms to the `tr`s and left and right borders
+// to the `td`s or `th`s
+
+.mf-table-bordered {
+  > :not(caption) > * {
+    border-width: 1px 0;
+
+    // stylelint-disable-next-line selector-max-universal
+    > * {
+      border-width: 0 1px;
+    }
+  }
+}
+
+.mf-table-borderless {
+  // stylelint-disable-next-line selector-max-universal
+  > :not(caption) > * > * {
+    border-bottom-width: 0;
+  }
+
+  > :not(:first-child) {
+    border-top-width: 0;
+  }
+}
+
+// Active table
+//
+// The `.mf-table-active` class can be added to highlight rows or cells
+
+.mf-table-active {
+  --mf-table-accent-bg: var(--mf-table-active-bg);
+  color: var(--mf-table-active-color);
+}
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.mf-table-hover {
+  > tbody > tr:hover > * {
+    --mf-table-accent-bg: var(--mf-table-hover-bg);
+    color: var(--mf-table-hover-color);
+  }
+}

@@ -1,0 +1,64 @@
+@use 'sass:map';
+
+.mf-input {
+  position: relative;
+  width: 300px;
+
+  input,
+  textarea {
+    display: block;
+    border: none;
+    border-bottom: 2px solid var(--mf-color-grey-500);
+    padding: 20px 2px;
+    width: 100%;
+    font-size: var(--mf-fs-p);
+
+    &:disabled,
+    &.disabled {
+      background-color: var(--mf-color-grey-300);
+      pointer-events: none;
+    }
+
+    &:focus:not([disabled]):not(.disabled),
+    &:active:not([disabled]):not(.disabled) {
+      outline: none;
+      border-bottom: 2px solid var(--mf-color-grey-700);
+    }
+
+    &:hover:not([disabled]):not(.disabled),
+    &:hover:not([disabled]):not(.disabled) {
+      border-bottom: 2px solid var(--mf-color-money-blue-500);
+    }
+
+    &::placeholder,
+    &::placeholder {
+      color: var(--mf-color-grey-500);
+    }
+  }
+
+  &.mf-input-sm input {
+    padding: 12px 2px;
+    font-size: var(--mf-fs-p-s);
+  }
+  
+  &.mf-input-error input,
+  &.mf-input-error textarea {
+    border-bottom: 2px solid var(--mf-color-orange-500) !important;
+  }
+
+  &.mf-input-error .help-text {
+    color: var(--mf-color-orange-500) !important;
+  }
+
+  label {
+    display: block;
+  }
+
+  .mf-input-icon {
+    position: absolute;
+    right: 0;
+    top: 44%;
+    width: 15px;
+    height: auto;
+  }
+}

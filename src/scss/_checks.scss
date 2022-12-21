@@ -1,0 +1,119 @@
+@use 'sass:map';
+
+$height: 40px;
+$width: 40px;
+
+$height-sm: 24px;
+$width-sm: 24px;
+
+//
+// Check/radio
+//
+
+.mf-check {
+  display: block;
+  min-height: $height;
+  padding-left: $width;
+
+  &.mf-check-sm {
+    min-height: $height-sm;
+    padding-left: $width-sm;
+  }
+
+  .mf-check-input {
+    float: left;
+    margin-left: calc(0px - $width);
+  }
+
+  &.mf-check-sm .mf-check-input{
+    margin-left: calc(0px - $width-sm);
+  }
+
+  label {
+    line-height: $height !important;
+  }
+
+  &.mf-check-sm label {
+    line-height: 24px !important;
+  }
+}
+
+.mf-check-input {
+  width: $width;
+  height: $height;
+  vertical-align: top;
+  background-color: var(--mf-color-white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid var(--mf-color-grey-500);
+  appearance: none;
+  // @include transition($mf-check-transition);
+
+  &.mf-check-input-sm {
+    width: $width-sm;
+    height: $height-sm;
+    border-width: 1px;
+  }
+
+  &[type="checkbox"] {
+    border-radius: 4px;
+  }
+
+  &.mf-check-input-sm[type="checkbox"] {
+    border-radius: 3px;
+  }
+
+  &[type="radio"] {
+    border-radius: 50%;
+  }
+
+  &:checked {
+    background-color: black;
+    border: 8px solid var(--mf-color-money-blue-500);
+  }
+
+  &.mf-check-input-sm:checked {
+    border-width: 4px;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: var(--mf-color-grey-300);
+    border: 2px solid var(--mf-color-grey-500);
+  }
+
+  &:disabled:checked {
+    background-color: var(--mf-color-grey-500);
+    border: 8px solid var(--mf-color-grey-300);
+  }
+
+  // Use disabled attribute in addition of :disabled pseudo-class
+  // See: https://github.com/twbs/bootstrap/issues/28247
+  &[disabled],
+  &:disabled {
+    ~ label {
+      color: var(--mf-color-grey-500);
+    }
+  }
+}
+
+//
+// Switch
+//
+
+// .mf-switch {
+//   .mf-check-input {
+//     width: 72px;
+//     margin-left: 10px;
+//     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+//     background-position: left center;
+//     border-radius: 2em;
+//     transition: background-position .15s ease-in-out;
+
+//     &:checked {
+//       background-position: $mf-switch-checked-bg-position;
+//       background-image: escape-svg($mf-switch-checked-bg-image);
+//     }
+//   }
+// }

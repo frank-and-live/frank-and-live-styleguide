@@ -1,0 +1,42 @@
+@use './lib/mixins';
+
+$colors: (
+  'money-blue-500': #0023f5,
+  'blue-light-500': #70a2ec,
+  'turqouise-500': #b3d3e2,
+  'tangerine-500': #f7cc9c,
+  'beige-500': #f6f6e4,
+  'yellow-500': #f9d968,
+  'grey-100': #fafafa,
+  'grey-300': #f1f1f1,
+  'grey-500': #999,
+  'grey-700': #252525,
+  'white': #fff,
+  'black': #000,
+  'green-300': #84B29B,
+  'green-700': #31734b,
+  'orange-300': #f4af78,
+  'orange-500': #ff823b,
+  'orange-700': #ff533b,
+);
+$overlay-values: (0.9, 0.8, 0.7, 0.6, 0.5);
+
+:root {
+  @each $name, $hex in $colors {
+    --mf-color-#{$name}: #{$hex};
+  }
+}
+
+@each $name, $hex in $colors {
+  @include mixins.mf-generate-color($name, $hex);
+}
+
+@each $opacity in $overlay-values {
+  .mf-bg-overlay-light-#{$opacity * 100} {
+    background-color: rgba(255, 255, 255, $opacity);
+  }
+
+  .mf-bg-overlay-dark-#{$opacity * 100} {
+    background-color: rgba(0, 0, 0, $opacity);
+  }
+}
