@@ -1,7 +1,7 @@
 {
-  "name": "moneyflow-style-guide",
-  "version": "2.0.0",
-  "description": "Moneyflow Frontend Style Repository",
+  "name": "frank-and-live-styleguide",
+  "version": "1.0.0",
+  "description": "FRANK & LIVE Frontend Style Repository",
   "scripts": {
     "start": "nodemon --watch src/ --ext '*' --exec \"npm run build\"",
     "clean-dist": "rm -rf dist && mkdir dist",
@@ -10,7 +10,7 @@
     "build-css": "node bin/build-css.js",
     "build-js": "rollup --config rollup.config.js",
     "build-static": "cp -r src/static dist/static",
-    "build-docs": "cp -r dist docs/src/assets/mf-style-guide && cd docs && npm run build"
+    "build-docs": "cp -r dist docs/src/assets/frank-and-live-styleguide && cd docs && npm run build"
   },
   "engineStrict": true,
   "engines": {
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moneyflow-group/moneyflow-style-guide.git"
+    "url": "git+https://github.com/frank-and-live/frank-and-live-styleguide.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moneyflow-group/moneyflow-style-guide/issues"
+    "url": "https://github.com/frank-and-live/frank-and-live-styleguide/issues"
   },
-  "homepage": "https://github.com/moneyflow-group/moneyflow-style-guide#readme",
+  "homepage": "https://github.com/frank-and-live/frank-and-live-styleguide#readme",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^8.4.0",

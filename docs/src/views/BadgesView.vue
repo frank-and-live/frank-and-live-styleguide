@@ -1,15 +1,15 @@
 <template>
   <h5>Fun examples</h5>
-  <div class="d-inline-block mb-5 border mf-border-grey-500">
+  <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <span class="mf-badge mf-bg-green-700 mf-fg-white">Approved</span>
+        <span class="fl-badge fl-bg-green-700 fl-fg-white">Approved</span>
       </div>
       <div class="p-5">
-        <span class="mf-badge mf-bg-orange-700 mf-fg-white">Declined</span>
+        <span class="fl-badge fl-bg-orange-700 fl-fg-white">Declined</span>
       </div>
       <div class="p-5">
-        <span class="mf-badge mf-bg-yellow-500 mf-fg-black">Under review</span>
+        <span class="fl-badge fl-bg-yellow-500 fl-fg-black">Under review</span>
       </div>
     </div>
   </div>

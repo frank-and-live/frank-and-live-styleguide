@@ -1,1 +1,1 @@
-module.exports = { MAIN_BUILD_FILENAME: 'mf' }
+module.exports = { MAIN_BUILD_FILENAME: 'fl' }

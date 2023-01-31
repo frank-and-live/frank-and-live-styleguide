@@ -1,13 +1,15 @@
 @use 'sass:map';
 @import 'lib/vars';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&display=swap');
 
-$font-family: mabry, 'work sans', arial, helvetica, sans-serif;
+$font-family-display: 'Josefin Sans', 'work sans', arial, helvetica, sans-serif;
+$font-family: 'Lato', 'work sans', arial, helvetica, sans-serif;
 $font-specs: (
   (
     default-element: 'h1',
-    class-name: 'mf-fs-1',
+    class-name: 'fl-fs-1',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 120px,
       font-size-mobile: 56px,
       font-weight: 700,
@@ -19,9 +21,9 @@ $font-specs: (
   ),
   (
     default-element: 'h2',
-    class-name: 'mf-fs-2',
+    class-name: 'fl-fs-2',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 80px,
       font-size-mobile: 56px,
       font-weight: 700,
@@ -33,9 +35,9 @@ $font-specs: (
   ),
   (
     default-element: 'h3',
-    class-name: 'mf-fs-3',
+    class-name: 'fl-fs-3',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 56px,
       font-size-mobile: 49px,
       font-weight: 700,
@@ -47,9 +49,9 @@ $font-specs: (
   ),
   (
     default-element: 'h4',
-    class-name: 'mf-fs-4',
+    class-name: 'fl-fs-4',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 40px,
       font-size-mobile: 32px,
       font-weight: 700,
@@ -61,9 +63,9 @@ $font-specs: (
   ),
   (
     default-element: 'h5',
-    class-name: 'mf-fs-5',
+    class-name: 'fl-fs-5',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 32px,
       font-size-mobile: 32px,
       font-weight: 700,
@@ -75,9 +77,9 @@ $font-specs: (
   ),
   (
     default-element: 'h6',
-    class-name: 'mf-fs-6',
+    class-name: 'fl-fs-6',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 24px,
       font-size-mobile: 24px,
       font-weight: 700,
@@ -88,9 +90,9 @@ $font-specs: (
     ),
   ),
   (
-    class-name: 'mf-fs-hero',
+    class-name: 'fl-fs-hero',
     values: (
-      font-family: $font-family,
+      font-family: $font-family-display,
       font-size: 200px,
       font-size-mobile: 64px,
       font-weight: 700,
@@ -101,7 +103,7 @@ $font-specs: (
     ),
   ),
   (
-    class-name: 'mf-fs-p-xl',
+    class-name: 'fl-fs-p-xl',
     values: (
       font-family: $font-family,
       font-size: 56px,
@@ -114,7 +116,7 @@ $font-specs: (
     ),
   ),
   (
-    class-name: 'mf-fs-p-l',
+    class-name: 'fl-fs-p-l',
     values: (
       font-family: $font-family,
       font-size: 32px,
@@ -128,7 +130,7 @@ $font-specs: (
   ),
   (
     default-element: 'p',
-    class-name: 'mf-fs-p',
+    class-name: 'fl-fs-p',
     values: (
       font-family: $font-family,
       font-size: 24px,
@@ -141,7 +143,7 @@ $font-specs: (
     ),
   ),
   (
-    class-name: 'mf-fs-p-s',
+    class-name: 'fl-fs-p-s',
     values: (
       font-family: $font-family,
       font-size: 16px,
@@ -154,7 +156,7 @@ $font-specs: (
     ),
   ),
   (
-    class-name: 'mf-fs-p-xs',
+    class-name: 'fl-fs-p-xs',
     values: (
       font-family: $font-family,
       font-size: 12px,
@@ -167,33 +169,6 @@ $font-specs: (
     ),
   )
 );
-
-// Literal declarations of our web font
-/* stylelint-disable */
-@font-face {
-  font-family: mabry;
-  src: url('./static/fonts/mabry-regular-pro.eot');
-  src: url('./static/fonts/mabry-regular-pro.eot?#iefix')
-      format('embedded-opentype'),
-    url('./static/fonts/mabry-regular-pro.woff2') format('woff2'),
-    url('./static/fonts/mabry-regular-pro.woff') format('woff'),
-    url('./static/fonts/mabry-regular-pro.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: mabry;
-  src: url('./static/fonts/mabry-black-pro.eot');
-  src: url('./static/fonts/mabry-black-pro.eot?#iefix')
-      format('embedded-opentype'),
-    url('./static/fonts/mabry-black-pro.woff2') format('woff2'),
-    url('./static/fonts/mabry-black-pro.woff') format('woff'),
-    url('./static/fonts/mabry-black-pro.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-/* stylelint-enable */
 
 // Publish raw CSS vars
 :root {
@@ -232,7 +207,7 @@ $font-specs: (
     }
   }
 
-  // Publish generic type classes, e.g. `.mf-fs-1`
+  // Publish generic type classes, e.g. `.fl-fs-1`
   #{'.'}#{map.get($font-spec, 'class-name')} {
     font-size: map.get(
       map.get($font-spec, 'values'),
@@ -288,7 +263,7 @@ $font-specs: (
       }
     }
 
-    // Publish generic type classes, e.g. `.mf-fs-1`
+    // Publish generic type classes, e.g. `.fl-fs-1`
     #{'.'}#{map.get($font-spec, 'class-name')} {
       font-size: map.get(
         map.get($font-spec, 'values'),
@@ -311,6 +286,7 @@ $font-specs: (
 // Some generic style literals...
 body {
   font-family: $font-family;
+  color: var(--fl-color-brown-500);
 }
 
 a {

@@ -1,11 +1,11 @@
-@mixin mf-generate-button($name, $props) {
-  .mf-btn-#{$name} {
+@mixin fl-generate-button($name, $props) {
+  .fl-btn-#{$name} {
     background-color: #{map.get($props, 'bg')} !important;
     border-color: #{map.get($props, 'border-color')} !important;
     color: #{map.get($props, 'fg')} !important;
     padding-right: 80px;
 
-    &.mf-btn-sm {
+    &.fl-btn-sm {
       border-width: 1px !important;
       padding-right: 48px !important;
     }
@@ -24,49 +24,49 @@
     }
   }
 
-  .mf-btn-#{$name}::after {
+  .fl-btn-#{$name}::after {
     background-color: #{map.get($props, 'dot')} !important;
   }
 
-  .mf-btn-#{$name}:disabled::after,
-  .mf-btn-#{$name}.disabled::after {
+  .fl-btn-#{$name}:disabled::after,
+  .fl-btn-#{$name}.disabled::after {
     background-color: #{map.get($props, 'dot-disabled')} !important;
   }
 
   @if map.get($props, 'dot') == none {
-    .mf-btn-#{$name}::after {
+    .fl-btn-#{$name}::after {
       display: none;
     }
   }
 
   @if $name == link {
-    .mf-btn-#{$name} {
+    .fl-btn-#{$name} {
       padding: 0 !important;
       height: initial !important;
     }
   }
 }
 
-@mixin mf-generate-color($name, $hex) {
-  .mf-bg-#{$name} {
+@mixin fl-generate-color($name, $hex) {
+  .fl-bg-#{$name} {
     background-color: #{$hex} !important;
   }
 
-  .mf-fg-#{$name} {
+  .fl-fg-#{$name} {
     color: #{$hex} !important;
   }
 
-  .mf-fg-#{$name} path {
+  .fl-fg-#{$name} path {
     fill: #{$hex} !important;
   }
 
-  .mf-border-#{$name} {
+  .fl-border-#{$name} {
     border-color: #{$hex} !important;
   }
 }
 
-@mixin mf-generate-transition($prop, $time) {
-  .mf-trans-#{$prop}-#{$time} {
+@mixin fl-generate-transition($prop, $time) {
+  .fl-trans-#{$prop}-#{$time} {
     transition: #{$prop};
   }
 }

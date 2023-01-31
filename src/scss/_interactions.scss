@@ -28,14 +28,14 @@ $transition-times: (
 
 @each $prop in $transition-props {
   @each $time in $transition-times {
-    @include mixins.mf-generate-transition($prop, $time);
+    @include mixins.fl-generate-transition($prop, $time);
   }
 }
 
-.mf-btn-reset:active,
-.mf-btn-reset:focus,
-.mf-text-reset:active,
-.mf-text-reset:focus {
+.fl-btn-reset:active,
+.fl-btn-reset:focus,
+.fl-text-reset:active,
+.fl-text-reset:focus {
   outline: none !important;
   box-shadow: none !important;
 }

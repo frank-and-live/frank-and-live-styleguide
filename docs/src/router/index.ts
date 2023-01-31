@@ -4,7 +4,6 @@ import BadgesView from '@/views/BadgesView.vue'
 import ButtonsView from '@/views/ButtonsView.vue'
 import ChecksView from '@/views/ChecksView.vue'
 import ColorsView from '@/views/ColorsView.vue'
-import FontsView from '@/views/FontsView.vue'
 import HomeView from '@/views/HomeView.vue'
 import InputsView from '@/views/InputsView.vue'
 import LogosView from '@/views/LogosView.vue'
@@ -48,11 +47,6 @@ const router = createRouter({
       path: '/colors',
       name: 'colors',
       component: ColorsView,
-    },
-    {
-      path: '/fonts',
-      name: 'fonts',
-      component: FontsView,
     },
     {
       path: '/inputs',

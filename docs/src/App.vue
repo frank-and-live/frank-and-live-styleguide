@@ -1,16 +1,16 @@
 <template>
   <div class="d-flex flex-column min-vh-100;">
-    <header class="d-flex align-items-center p-3 px-5">
+    <header class="d-flex align-items-center p-3 px-5 fl-bg-white">
       <router-link class="d-block flex-grow-1" to="/">
         <img
           class="w-auto"
           style="height: 30px"
-          src="https://moneyflow-group.github.io/moneyflow-style-guide-v2/dist/static/logos/logo--type--blue-black--h.svg"
-          alt=""
+          src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo.svg"
+          alt="FRANK & LIVE"
         />
       </router-link>
       <p class="m-0">
-        Style guide v2
+        Styleguide
       </p>
     </header>
     <div class="row flex-grow-1 p-5">
@@ -74,12 +74,12 @@
   padding: 0;
 }
 .docs-menu a {
-  color: var(--mf-color-grey-700);
+  color: var(--fl-color-grey-700);
   font-size: 24px;
   text-decoration: none;
 }
 
 .docs-menu a.active {
-  color: var(--mf-color-money-blue-500);
+  color: var(--fl-color-red-500);
 }
 </style>

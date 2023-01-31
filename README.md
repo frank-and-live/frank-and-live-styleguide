@@ -1,13 +1,13 @@
-# Moneyflow Style Guide
+# FRANK & LIVE Style Guide
 The styleguide provides a number of asset through the `/dist` folder.
-Notably `mf.min.css` and `mf.min.js` along with static assets can be found here.
+Notably `fl.min.css` and `fl.min.js` along with static assets can be found here.
 
 ## Documentation
-For information on how to use the styleguide please see the <a href="https://style.moneyflow.dev/docs/dist/">documentation</a>.
+For information on how to use the styleguide please see the <a href="https://style.frankandlive.com/docs/dist/">documentation</a>.
 
 ## How to update the styleguide
 If you want to update anything in the styleguide follow these steps (node.js is required)
-- in a terminal `cd` into `moneyflow-core/code/assets/moneyflow-styleguide-v2` and run `npm i`. This will install all depencies
+- in a terminal `cd` into `frank-and-live-styleguide` and run `npm i`. This will install all depencies
 - then run `npm start`. This will start a file watcher, that will re-build the `/dist` folder every time a file is changes. You can now do your updates in eg. `/src/_buttons.scss` if you wish to update the apperance of the buttons. 
 - to run the docs - open a new terminal in the same location and `cd` into `/docs` and run `npm i`.
 - then run `npm run dev`. This will start the Vue app in development mode. A local ip-address will be printed where you can see the docs. You can now do your updates in eg. `/docs/src/views/ButtonsView.vue` if you wish to update the documentation page for the buttons.

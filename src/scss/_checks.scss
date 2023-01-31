@@ -10,22 +10,22 @@ $width-sm: 24px;
 // Check/radio
 //
 
-.mf-check {
+.fl-check {
   display: block;
   min-height: $height;
   padding-left: $width;
 
-  &.mf-check-sm {
+  &.fl-check-sm {
     min-height: $height-sm;
     padding-left: $width-sm;
   }
 
-  .mf-check-input {
+  .fl-check-input {
     float: left;
     margin-left: calc(0px - $width);
   }
 
-  &.mf-check-sm .mf-check-input{
+  &.fl-check-sm .fl-check-input{
     margin-left: calc(0px - $width-sm);
   }
 
@@ -33,24 +33,24 @@ $width-sm: 24px;
     line-height: $height !important;
   }
 
-  &.mf-check-sm label {
+  &.fl-check-sm label {
     line-height: 24px !important;
   }
 }
 
-.mf-check-input {
+.fl-check-input {
   width: $width;
   height: $height;
   vertical-align: top;
-  background-color: var(--mf-color-white);
+  background-color: var(--fl-color-white);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 2px solid var(--mf-color-grey-500);
+  border: 2px solid var(--fl-color-grey-500);
   appearance: none;
-  // @include transition($mf-check-transition);
+  // @include transition($fl-check-transition);
 
-  &.mf-check-input-sm {
+  &.fl-check-input-sm {
     width: $width-sm;
     height: $height-sm;
     border-width: 1px;
@@ -60,7 +60,7 @@ $width-sm: 24px;
     border-radius: 4px;
   }
 
-  &.mf-check-input-sm[type="checkbox"] {
+  &.fl-check-input-sm[type="checkbox"] {
     border-radius: 3px;
   }
 
@@ -70,22 +70,22 @@ $width-sm: 24px;
 
   &:checked {
     background-color: black;
-    border: 8px solid var(--mf-color-money-blue-500);
+    border: 8px solid var(--fl-color-blue-500);
   }
 
-  &.mf-check-input-sm:checked {
+  &.fl-check-input-sm:checked {
     border-width: 4px;
   }
 
   &:disabled {
     pointer-events: none;
-    background-color: var(--mf-color-grey-300);
-    border: 2px solid var(--mf-color-grey-500);
+    background-color: var(--fl-color-grey-300);
+    border: 2px solid var(--fl-color-grey-500);
   }
 
   &:disabled:checked {
-    background-color: var(--mf-color-grey-500);
-    border: 8px solid var(--mf-color-grey-300);
+    background-color: var(--fl-color-grey-500);
+    border: 8px solid var(--fl-color-grey-300);
   }
 
   // Use disabled attribute in addition of :disabled pseudo-class
@@ -93,7 +93,7 @@ $width-sm: 24px;
   &[disabled],
   &:disabled {
     ~ label {
-      color: var(--mf-color-grey-500);
+      color: var(--fl-color-grey-500);
     }
   }
 }
@@ -102,8 +102,8 @@ $width-sm: 24px;
 // Switch
 //
 
-// .mf-switch {
-//   .mf-check-input {
+// .fl-switch {
+//   .fl-check-input {
 //     width: 72px;
 //     margin-left: 10px;
 //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
@@ -112,8 +112,8 @@ $width-sm: 24px;
 //     transition: background-position .15s ease-in-out;
 
 //     &:checked {
-//       background-position: $mf-switch-checked-bg-position;
-//       background-image: escape-svg($mf-switch-checked-bg-image);
+//       background-position: $fl-switch-checked-bg-position;
+//       background-image: escape-svg($fl-switch-checked-bg-image);
 //     }
 //   }
 // }

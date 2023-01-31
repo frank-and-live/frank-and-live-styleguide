@@ -9,7 +9,7 @@ export default {
     file: `dist/${MAIN_BUILD_FILENAME}.min.js`,
     sourcemap: true,
     format: 'iife',
-    name: 'mf'
+    name: 'fl'
   },
   plugins: [
     typescript(),

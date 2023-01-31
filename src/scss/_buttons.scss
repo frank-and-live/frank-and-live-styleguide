@@ -13,48 +13,48 @@ $buttons: (
     'fg-disabled': inherit,
   ),
   'filled-white': (
-    'bg': var(--mf-color-white),
-    'bg-disabled': var(--mf-color-grey-300),
-    'border-color': #{var(--mf-color-white)},
+    'bg': var(--fl-color-white),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-white)},
     'border-disabled-color': transparent,
-    'dot': var(--mf-color-money-blue-500),
-    'dot-disabled': var(--mf-color-grey-500),
-    'fg': var(--mf-color-money-blue-500),
-    'fg-disabled': var(--mf-color-grey-500),
+    'dot': var(--fl-color-blue-500),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-blue-500),
+    'fg-disabled': var(--fl-color-grey-500),
   ),
   'filled-blue': (
-    'bg': var(--mf-color-money-blue-500),
-    'bg-disabled': var(--mf-color-grey-300),
-    'border-color': #{var(--mf-color-money-blue-500)},
+    'bg': var(--fl-color-blue-500),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-blue-500)},
     'border-disabled-color': transparent,
-    'dot': var(--mf-color-white),
-    'dot-disabled': var(--mf-color-grey-500),
-    'fg': var(--mf-color-white),
-    'fg-disabled': var(--mf-color-grey-500),
+    'dot': var(--fl-color-white),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-white),
+    'fg-disabled': var(--fl-color-grey-500),
   ),
   'outlined': (
     'bg': transparent,
     'bg-disabled': transparent,
-    'border-color': #{var(--mf-color-money-blue-500)},
-    'border-disabled-color': #{var(--mf-color-grey-500)},
-    'dot': var(--mf-color-money-blue-500),
-    'dot-disabled': var(--mf-color-grey-500),
-    'fg': var(--mf-color-money-blue-500),
-    'fg-disabled': var(--mf-color-grey-500),
+    'border-color': #{var(--fl-color-blue-500)},
+    'border-disabled-color': #{var(--fl-color-grey-500)},
+    'dot': var(--fl-color-blue-500),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-blue-500),
+    'fg-disabled': var(--fl-color-grey-500),
   ),
   'tertiary': (
     'bg': transparent,
     'bg-disabled': transparent,
     'border-color': transparent,
     'border-disabled-color': transparent,
-    'dot': var(--mf-color-money-blue-500),
-    'dot-disabled': var(--mf-color-grey-500),
-    'fg': var(--mf-color-money-blue-500),
-    'fg-disabled': var(--mf-color-grey-500),
+    'dot': var(--fl-color-blue-500),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-blue-500),
+    'fg-disabled': var(--fl-color-grey-500),
   ),
 );
 
-.mf-btn {
+.fl-btn {
   position: relative;
   box-sizing: border-box;
   display: inline-flex;
@@ -62,7 +62,7 @@ $buttons: (
   border-style: solid;
   border-width: 2px;
   border-radius: 80px;
-  border-color: var(--mf-color-grey-700);
+  border-color: var(--fl-color-grey-700);
   background-color: transparent;
   padding: 22px 40px 24px 40px;
   line-height: 1;
@@ -116,7 +116,7 @@ $buttons: (
   }
 }
 
-.mf-btn-sm {
+.fl-btn-sm {
   border-width: 1px !important;
   font-size: 16px !important;
   padding: 11px 24px 11px 24px !important;
@@ -170,5 +170,5 @@ $buttons: (
 
 
 @each $name, $props in $buttons {
-  @include mf-generate-button($name, $props);
+  @include fl-generate-button($name, $props);
 }

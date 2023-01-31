@@ -1,6 +1,6 @@
 <template>
   <h5>Auto play</h5>
-  <div class="d-inline-block mb-5 border mf-border-grey-500 mf-bg-green-300 overflow-hidden position-relative">
+  <div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-white overflow-hidden position-relative">
     
     <lottie-player
       preserveAspectRatio="xMidYMid slice"
@@ -14,13 +14,13 @@
     <div class="p-5 position-relative">
       <h4>Success</h4>
       <p>New frontend skill unlocked!</p>
-      <button class="mf-btn mf-btn-sm mf-btn-filled-blue float-end mb-5">Affirmative</button>
+      <button class="fl-btn fl-btn-sm fl-btn-filled-blue float-end mb-5">Affirmative</button>
     </div>
 
   </div>
 
   <h5>Interactivity</h5>
-  <div class="d-inline-block mb-5 border mf-border-grey-500">
+  <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex align-items-center">
       <div class="p-5">
         <p>Hover the eye</p>
@@ -28,7 +28,7 @@
       <div class="p-5">
         <lottie-player id="eye-opening"
           ref="lottie"
-          src="https://style.moneyflow.dev/dist/static/animations/eye-opening.json"
+          src="/src/assets/frank-and-live-styleguide/dist/static/animations/eye-opening.json"
           style="width: 320px; height: 200px;"
         >
         </lottie-player>
@@ -37,9 +37,9 @@
   </div>
 
   <h5>GIF animations</h5>
-  <div class="d-inline-block mb-5 border mf-border-grey-500">
+  <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex align-items-center">
-      <img src="https://style.moneyflow.dev/dist/static/animations/big-spinner.gif" />
+      <img src="/src/assets/frank-and-live-styleguide/dist/static/animations/big-spinner.gif" />
     </div>
   </div>
 </template>
