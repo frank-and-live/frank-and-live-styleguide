@@ -84,7 +84,7 @@
         <tbody class="fl-table-group-divider">
           <tr>
             <td colspan="6">
-              <span class="fl-fs-p-s fl-fg-blue-500">Items are loading...</span>
+              <span class="fl-fs-p-s fl-fg-red-500">Items are loading...</span>
             </td>
           </tr>
         </tbody>

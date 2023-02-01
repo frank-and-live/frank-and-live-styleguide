@@ -75,7 +75,7 @@
         />
         <img
           class="fl-input-icon"
-          src="https://moneyflow-group.github.io/moneyflow-style-guide-v2/dist/static/icons/close.svg"
+          src="/src/assets/frank-and-live-styleguide/dist/static/icons/close.svg"
           alt=""
         />
         <div class="fl-fs-p-5 fl-fg-grey-500 mt-1 help-text">

@@ -13,23 +13,32 @@
   <h5 class="my-3">Primary brand</h5>
   <div class="d-inline-block p-5 mb-5 border fl-border-grey-500">
     <div class="d-flex flex-wrap">
-      <div class="color-circle fl-bg-blue-500 fl-fg-white">
-        <h6>Blue 500</h6>
-      </div>
       <div class="color-circle fl-bg-brown-500 fl-fg-white">
         <h6>Brown 500</h6>
       </div>
       <div class="color-circle fl-bg-red-500 fl-fg-white">
         <h6>Red 500</h6>
       </div>
-      <div class="color-circle fl-bg-red-100">
-        <h6>Red 100</h6>
+      <div class="color-circle fl-bg-pink-500">
+        <h6>Pink 500</h6>
+      </div>
+      <div class="color-circle fl-bg-yellow-500">
+        <h6>Yellow 500</h6>
       </div>
       <div class="color-circle fl-bg-beige-500 border fl-border-black">
         <h6>Beige 500</h6>
       </div>
-      <div class="color-circle fl-bg-yellow-500">
-        <h6>Yellow 500</h6>
+    </div>
+  </div>
+    
+  <h5 class="my-3">UI/Feedback</h5>
+  <div class="d-inline-block p-5 mb-5 border fl-border-grey-500">
+    <div class="d-flex flex-wrap">
+      <div class="color-circle fl-bg-green-500">
+        <h6>Green 500</h6>
+      </div>
+      <div class="color-circle border fl-bg-orange-500 fl-fg-white">
+        <h6>Orange 500</h6>
       </div>
     </div>
   </div>
@@ -54,27 +63,6 @@
       </div>
       <div class="color-circle fl-bg-black fl-fg-white">
         <h6>Black</h6>
-      </div>
-    </div>
-  </div>
-  
-  <h5 class="my-3">UI/Feedback</h5>
-  <div class="d-inline-block p-5 mb-5 border fl-border-grey-500">
-    <div class="d-flex flex-wrap">
-      <div class="color-circle border fl-bg-green-300 fl-fg-white">
-        <h6>Green 300</h6>
-      </div>
-      <div class="color-circle border fl-bg-green-700 fl-fg-white">
-        <h6>Green 700</h6>
-      </div>
-      <div class="color-circle border fl-bg-orange-300 fl-fg-white">
-        <h6>Orange 300</h6>
-      </div>
-      <div class="color-circle border fl-bg-orange-500 fl-fg-white">
-        <h6>Orange 500</h6>
-      </div>
-      <div class="color-circle border fl-bg-orange-700 fl-fg-white">
-        <h6>Orange 700</h6>
       </div>
     </div>
   </div>

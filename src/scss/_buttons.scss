@@ -17,15 +17,45 @@ $buttons: (
     'bg-disabled': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-white)},
     'border-disabled-color': transparent,
-    'dot': var(--fl-color-blue-500),
+    'dot': var(--fl-color-green-500),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-blue-500),
+    'fg': var(--fl-color-green-500),
     'fg-disabled': var(--fl-color-grey-500),
   ),
-  'filled-blue': (
-    'bg': var(--fl-color-blue-500),
+  'filled-brown': (
+    'bg': var(--fl-color-brown-500),
     'bg-disabled': var(--fl-color-grey-300),
-    'border-color': #{var(--fl-color-blue-500)},
+    'border-color': #{var(--fl-color-brown-500)},
+    'border-disabled-color': transparent,
+    'dot': var(--fl-color-white),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-white),
+    'fg-disabled': var(--fl-color-grey-500),
+  ),
+  'filled-red': (
+    'bg': var(--fl-color-red-500),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-red-500)},
+    'border-disabled-color': transparent,
+    'dot': var(--fl-color-white),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-white),
+    'fg-disabled': var(--fl-color-grey-500),
+  ),
+  'filled-yellow': (
+    'bg': var(--fl-color-yellow-500),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-yellow-500)},
+    'border-disabled-color': transparent,
+    'dot': var(--fl-color-black),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-black),
+    'fg-disabled': var(--fl-color-grey-500),
+  ),
+  'filled-green': (
+    'bg': var(--fl-color-green-500),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-green-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-white),
     'dot-disabled': var(--fl-color-grey-500),
@@ -35,11 +65,11 @@ $buttons: (
   'outlined': (
     'bg': transparent,
     'bg-disabled': transparent,
-    'border-color': #{var(--fl-color-blue-500)},
+    'border-color': #{var(--fl-color-green-500)},
     'border-disabled-color': #{var(--fl-color-grey-500)},
-    'dot': var(--fl-color-blue-500),
+    'dot': var(--fl-color-green-500),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-blue-500),
+    'fg': var(--fl-color-green-500),
     'fg-disabled': var(--fl-color-grey-500),
   ),
   'tertiary': (
@@ -47,9 +77,9 @@ $buttons: (
     'bg-disabled': transparent,
     'border-color': transparent,
     'border-disabled-color': transparent,
-    'dot': var(--fl-color-blue-500),
+    'dot': var(--fl-color-green-500),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-blue-500),
+    'fg': var(--fl-color-green-500),
     'fg-disabled': var(--fl-color-grey-500),
   ),
 );
@@ -61,12 +91,13 @@ $buttons: (
   align-items: center;
   border-style: solid;
   border-width: 2px;
-  border-radius: 80px;
+  // border-radius: 40px;
   border-color: var(--fl-color-grey-700);
   background-color: transparent;
-  padding: 22px 40px 24px 40px;
+  padding: 14px 32px 16px 32px;
   line-height: 1;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 700;
   outline: none;
   white-space: nowrap;
   text-decoration: none;
@@ -77,25 +108,27 @@ $buttons: (
     cursor: pointer;
   }
 
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-top: -8px;
-    border-radius: 16px;
-    content: ' ';
-    transition: all 0.3s cubic-bezier(0,0,0,1);
-  }
+  // The dot
+  // &::after {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 40px;
+  //   display: block;
+  //   width: 16px;
+  //   height: 16px;
+  //   margin-top: -8px;
+  //   border-radius: 16px;
+  //   content: ' ';
+  //   transition: all 0.3s cubic-bezier(0,0,0,1);
+  // }
   
-  &:hover::after {
-    right: 56px !important;
-  }
+  // &:hover::after {
+  //   right: 56px !important;
+  // }
 
   // HTMX will add a "htmx-request" class while it is fetching
   &.htmx-request::after {
+    position: absolute;
     top: 49%;
     right: 38px;
     display: block;
@@ -106,6 +139,7 @@ $buttons: (
     border-top-color: transparent !important;
     border-width: 2px;
     border-style: solid;
+    border-radius: 16px;
     -webkit-animation: spin 1.1s infinite linear;
     animation: spin 1.1s infinite linear;
     content: ' ';

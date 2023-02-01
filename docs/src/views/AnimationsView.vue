@@ -6,7 +6,7 @@
       preserveAspectRatio="xMidYMid slice"
       autoplay
       loop
-      src="https://style.moneyflow.dev/dist/static/animations/success-confetti.json"
+      src="/src/assets/frank-and-live-styleguide/dist/static/animations/success-confetti.json"
       class="position-absolute"
       >
     </lottie-player>
@@ -14,7 +14,7 @@
     <div class="p-5 position-relative">
       <h4>Success</h4>
       <p>New frontend skill unlocked!</p>
-      <button class="fl-btn fl-btn-sm fl-btn-filled-blue float-end mb-5">Affirmative</button>
+      <button class="fl-btn fl-btn-sm fl-btn-filled-green float-end mb-5">Affirmative</button>
     </div>
 
   </div>

@@ -1,12 +1,12 @@
 <template>
   <h5 class="mb-3">Sizes</h5>
-	<div class="d-inline-block mb-5 border fl-border-grey-500">
+	<div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-white">
     <div class="d-flex align-items-center">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-blue">Regular</button>
+        <button class="fl-btn fl-btn-filled-green">Regular</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-blue">Small</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-green">Small</button>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
   <p>Filled white</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
-      <div class="p-5 fl-bg-grey-300">
+      <div class="p-5">
         <button class="fl-btn fl-btn-filled-white">Button</button>
       </div>
       <div class="p-5">
@@ -24,14 +24,14 @@
     </div>
   </div>
 
-  <p>Filled blue</p>
+  <p>Filled green</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-blue">Button</button>
+        <button class="fl-btn fl-btn-filled-green">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-blue" disabled>Button</button>
+        <button class="fl-btn fl-btn-filled-green" disabled>Button</button>
       </div>
     </div>
   </div>
@@ -76,10 +76,10 @@
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <a href="#" class="fl-btn fl-btn-filled-blue">Link</a>
+        <a href="#" class="fl-btn fl-btn-filled-green">Link</a>
       </div>
       <div class="p-5">
-        <a class="fl-btn fl-btn-filled-blue disabled">Link</a>
+        <a class="fl-btn fl-btn-filled-green disabled">Link</a>
       </div>
     </div>
   </div>
@@ -89,13 +89,13 @@
     <div class="d-flex align-items-center">
       <div class="p-5">
         <button class="fl-btn">
-          <img class="me-3" src="https://style.moneyflow.dev/dist/static/logos/logo--favicon--white--dotted.svg">
+          <img class="me-3" src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo--favicon--white--dotted.svg">
           Connect
         </button>
       </div>
       <div class="p-5">
         <button class="fl-btn fl-btn-sm">
-          <img class="me-3" style="height: 16px;" src="https://style.moneyflow.dev/dist/static/logos/logo--favicon--white--dotted.svg">
+          <img class="me-3" style="height: 16px;" src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo--favicon--white--dotted.svg">
           Connect
         </button>
       </div>
@@ -106,21 +106,21 @@
   <p>HTMX will add a <code>htmx-request</code> class while it is fetching</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
-      <div class="p-5 fl-bg-grey-300">
+      <div class="p-5">
         <button class="fl-btn fl-btn-filled-white htmx-request">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-blue htmx-request">Button</button>
+        <button class="fl-btn fl-btn-filled-green htmx-request">Button</button>
       </div>
     </div>
   </div>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
-      <div class="p-5 fl-bg-grey-300">
+      <div class="p-5">
         <button class="fl-btn fl-btn-sm fl-btn-filled-white htmx-request">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-blue htmx-request">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-green htmx-request">Button</button>
       </div>
     </div>
   </div>

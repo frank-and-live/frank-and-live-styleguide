@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column min-vh-100;">
     <header class="d-flex align-items-center p-3 px-5 fl-bg-white">
-      <router-link class="d-block flex-grow-1" to="/">
+      <router-link class="d-block" to="/">
         <img
           class="w-auto"
           style="height: 30px"
@@ -9,7 +9,7 @@
           alt="FRANK & LIVE"
         />
       </router-link>
-      <p class="m-0">
+      <p class="m-0 ms-3">
         Styleguide
       </p>
     </header>
@@ -31,9 +31,6 @@
             </li>
             <li class="mb-2">
               <router-link to="/colors/">Colors</router-link>
-            </li>
-            <li class="mb-2">
-              <router-link to="/fonts/">Fonts</router-link>
             </li>
             <li class="mb-2">
               <router-link to="/inputs/">Inputs</router-link>
@@ -74,12 +71,11 @@
   padding: 0;
 }
 .docs-menu a {
-  color: var(--fl-color-grey-700);
   font-size: 24px;
   text-decoration: none;
 }
 
 .docs-menu a.active {
-  color: var(--fl-color-red-500);
+  color: var(--fl-color-green-500);
 }
 </style>

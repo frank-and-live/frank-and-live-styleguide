@@ -3,11 +3,11 @@
     background-color: #{map.get($props, 'bg')} !important;
     border-color: #{map.get($props, 'border-color')} !important;
     color: #{map.get($props, 'fg')} !important;
-    padding-right: 80px;
+    // padding-right: 80px; // The dot
 
     &.fl-btn-sm {
       border-width: 1px !important;
-      padding-right: 48px !important;
+      // padding-right: 48px !important; // The dot
     }
 
     &:disabled,
@@ -16,6 +16,14 @@
       background-color: #{map.get($props, 'bg-disabled')} !important;
       border-color: #{map.get($props, 'border-disabled-color')} !important;
       color: #{map.get($props, 'fg-disabled')} !important;
+    }
+
+    &.htmx-request {
+      padding-right: 80px;
+    }
+
+    &.htmx-request.fl-btn-sm {
+      padding-right: 48px !important;
     }
 
     &.htmx-request::after {
