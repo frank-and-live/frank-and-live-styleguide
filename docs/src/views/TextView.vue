@@ -24,4 +24,8 @@
 		<p class="fl-fs-p-s">Paragraph S</p>
 		<p class="fl-fs-p-xs">Paragraph XS</p>
 	</div>
+  <h5 class="my-3">Links</h5>
+	<div class="d-inline-block p-5 mb-5 border fl-border-grey-500">
+		<p>I am a <a href="#">Link</a></p>
+	</div>
 </template>

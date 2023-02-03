@@ -1,4 +1,5 @@
 import 'bootstrap' // used for eg. collapse of topnav
+import * as Popper from "@popperjs/core"
 import '@lottiefiles/lottie-player'
 import '@lottiefiles/lottie-interactivity'
 
@@ -22,7 +23,7 @@ const resolveColor = (color: string, alpha: number):string => {
     return hexToRGB(colorHex, alpha)
   } else {
     return colorHex
-  }''
+  }
 }
 
 export {
