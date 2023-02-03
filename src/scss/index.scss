@@ -31,8 +31,8 @@ $navbar-padding-x: 40px;
 $navbar-nav-link-padding-x: 12px;
 // $nav-link-padding-y: 0;
 $navbar-brand-padding-y: 0;
-$navbar-light-color: #252525; // Hardcoded as our colors are imported later
-$navbar-light-active-color: #0023f5; // Hardcoded as our colors are imported later
+// $navbar-light-color: #252525; // Hardcoded as our colors are imported later
+$navbar-light-active-color: #009007; // Hardcoded as our colors are imported later
 @import '../../node_modules/bootstrap/scss/navbar';
 @import '../../node_modules/bootstrap/scss/transitions';
 @import '../../node_modules/bootstrap/scss/utilities/api';
