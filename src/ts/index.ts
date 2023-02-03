@@ -1,4 +1,4 @@
-import 'bootstrap' // used for eg. collapse of topnav
+import 'bootstrap/dist/js/bootstrap.bundle' // used for eg. collapse of topnav
 import '@lottiefiles/lottie-player'
 import '@lottiefiles/lottie-interactivity'
 

@@ -1,3 +1,10 @@
+<script setup lang="ts">
+
+// import 'bootstrap/js/dist/offcanvas.js'
+// import 'bootstrap/js/dist/dropdown.js'
+
+</script>
+
 <template>
   <div class="d-flex flex-column min-vh-100;">
     <header class="d-flex align-items-center p-3 px-5 fl-bg-white">
@@ -57,6 +64,19 @@
               <router-link to="/textareas/">Textareas</router-link>
             </li>
           </ul>
+          <div class="flex-fill"></div>
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" style="">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
         </nav>
       </aside>
       <main class="col-9 col-xxl-8"><router-view /></main>
