@@ -45,24 +45,24 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue'
-  import * as LottiePlayer from '@lottiefiles/lottie-player'
-  import { create } from '@lottiefiles/lottie-interactivity'
+  // import { ref, onMounted } from 'vue'
+  // import * as LottiePlayer from '@lottiefiles/lottie-player'
+  // import { create } from '@lottiefiles/lottie-interactivity'
 
-  const lottie = ref(null)
+  // const lottie = ref(null)
   
-  onMounted(() => {
-    lottie.value.addEventListener('load', function() {
-      create({
-        player: '#eye-opening',
-        mode: "cursor",
-        actions: [
-          {
-            type: "hover",
-            forceFlag: false
-          }
-        ],
-      })
-    })
-  })
+  // onMounted(() => {
+  //   lottie.value.addEventListener('load', function() {
+  //     create({
+  //       player: '#eye-opening',
+  //       mode: "cursor",
+  //       actions: [
+  //         {
+  //           type: "hover",
+  //           forceFlag: false
+  //         }
+  //       ],
+  //     })
+  //   })
+  // })
 </script>

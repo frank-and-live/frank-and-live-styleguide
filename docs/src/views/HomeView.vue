@@ -29,5 +29,4 @@
   <p>
     All bootstrap classes maintain their original names, and <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">documentation can be found here</a>.
   </p>
-
 </template>
