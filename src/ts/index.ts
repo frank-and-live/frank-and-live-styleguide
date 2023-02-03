@@ -1,5 +1,4 @@
 import 'bootstrap' // used for eg. collapse of topnav
-import * as Popper from "@popperjs/core"
 import '@lottiefiles/lottie-player'
 import '@lottiefiles/lottie-interactivity'
 
