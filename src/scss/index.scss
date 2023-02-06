@@ -15,7 +15,9 @@ $spacers: (
   5: $spacer * 2,
   6: $spacer * 2.5,
   7: $spacer * 3,
-  80: $spacer * 5,
+  8: $spacer * 3.5,
+  9: $spacer * 4,
+  10: $spacer * 4.5,
 );
 @import '../../node_modules/bootstrap/scss/utilities';
 @import '../../node_modules/bootstrap/scss/reboot';
