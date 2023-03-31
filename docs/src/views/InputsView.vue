@@ -59,7 +59,7 @@
           name="with-helper-text"
           placeholder="Preview text"
         />
-        <div class="fl-fs-p-5 fl-fg-grey-500 mt-1 help-text">
+        <div class="fl-fg-grey-500 mt-1 help-text">
           This is optional helper text
         </div>
       </div>
@@ -78,7 +78,7 @@
           src="/src/assets/frank-and-live-styleguide/dist/static/icons/close.svg"
           alt=""
         />
-        <div class="fl-fs-p-5 fl-fg-grey-500 mt-1 help-text">
+        <div class="fl-fg-grey-500 mt-1 help-text">
           This is optional helper text
         </div>
       </div>
@@ -97,7 +97,7 @@
             name="with-error"
             placeholder="Preview text"
           />
-          <div class="fl-fs-p-5 fl-fg-grey-500 mt-1 help-text">This is error text</div>
+          <div class="fl-fg-grey-500 mt-1 help-text">This is error text</div>
         </div>
       </div>
       <div class="p-5">
@@ -110,7 +110,7 @@
             placeholder="Preview text"
             disabled
           />
-          <div class="fl-fs-p-5 fl-fg-grey-500 mt-1 help-text">
+          <div class="fl-fg-grey-500 mt-1 help-text">
             This input is disabled
           </div>
         </div>

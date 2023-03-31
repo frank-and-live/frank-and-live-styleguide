@@ -18,15 +18,17 @@
       color: #{map.get($props, 'fg-disabled')} !important;
     }
 
-    &.htmx-request {
-      padding-right: 80px;
+    &.btn-spinner {
+      padding-right: 50px;
+      padding-left: 14px;
     }
 
-    &.htmx-request.fl-btn-sm {
-      padding-right: 48px !important;
+    &.btn-spinner.fl-btn-sm {
+      padding-right: 30px !important;
+      padding-left: 18px !important;
     }
 
-    &.htmx-request::after {
+    &.btn-spinner::after {
       background-color: transparent !important;
       border-color: #{map.get($props, 'dot')};
     }

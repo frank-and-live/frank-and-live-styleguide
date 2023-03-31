@@ -9835,6 +9835,7 @@ progress {
   align-items: center;
   border-style: solid;
   border-width: 2px;
+  border-radius: 2px;
   border-color: var(--fl-color-grey-700);
   background-color: transparent;
   padding: 14px 32px 16px 32px;
@@ -9849,10 +9850,10 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn.htmx-request::after {
+.fl-btn.btn-spinner::after {
   position: absolute;
-  top: 49%;
-  right: 38px;
+  top: 47%;
+  right: 14px;
   display: block;
   width: 18px;
   height: 18px;
@@ -9866,17 +9867,18 @@ progress {
   animation: spin 1.1s infinite linear;
   content: " ";
 }
-.fl-btn.htmx-request:hover::after {
-  right: 38px !important;
+.fl-btn.btn-spinner:hover::after {
+  right: 14px !important;
 }
 
 .fl-btn-sm {
   border-width: 1px !important;
   font-size: 16px !important;
   padding: 11px 24px 11px 24px !important;
+  border-radius: 1px;
 }
 .fl-btn-sm::after {
-  right: 24px !important;
+  right: 14px !important;
   width: 8px !important;
   height: 8px !important;
   margin-top: -4px !important;
@@ -9885,15 +9887,15 @@ progress {
 .fl-btn-sm:hover::after {
   right: 32px !important;
 }
-.fl-btn-sm.htmx-request::after {
+.fl-btn-sm.btn-spinner::after {
   border-width: 1px;
   margin-top: -2px !important;
 }
-.fl-btn-sm.htmx-request:hover::after {
-  right: 24px !important;
+.fl-btn-sm.btn-spinner:hover::after {
+  right: 14px !important;
 }
 
-.htmx-request {
+.btn-spinner {
   pointer-events: none;
 }
 
@@ -9931,13 +9933,15 @@ progress {
   border-color: transparent !important;
   color: inherit !important;
 }
-.fl-btn-link.htmx-request {
-  padding-right: 80px;
+.fl-btn-link.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-link.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-link.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-link.htmx-request::after {
+.fl-btn-link.btn-spinner::after {
   background-color: transparent !important;
   border-color: none;
 }
@@ -9974,13 +9978,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-filled-white.htmx-request {
-  padding-right: 80px;
+.fl-btn-filled-white.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-filled-white.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-filled-white.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-filled-white.htmx-request::after {
+.fl-btn-filled-white.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-green-500);
 }
@@ -10008,13 +10014,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-filled-brown.htmx-request {
-  padding-right: 80px;
+.fl-btn-filled-brown.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-filled-brown.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-filled-brown.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-filled-brown.htmx-request::after {
+.fl-btn-filled-brown.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10042,13 +10050,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-filled-red.htmx-request {
-  padding-right: 80px;
+.fl-btn-filled-red.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-filled-red.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-filled-red.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-filled-red.htmx-request::after {
+.fl-btn-filled-red.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10076,13 +10086,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-filled-yellow.htmx-request {
-  padding-right: 80px;
+.fl-btn-filled-yellow.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-filled-yellow.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-filled-yellow.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-filled-yellow.htmx-request::after {
+.fl-btn-filled-yellow.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-black);
 }
@@ -10110,13 +10122,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-filled-green.htmx-request {
-  padding-right: 80px;
+.fl-btn-filled-green.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-filled-green.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-filled-green.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-filled-green.htmx-request::after {
+.fl-btn-filled-green.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10144,13 +10158,15 @@ progress {
   border-color: var(--fl-color-grey-500) !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-outlined.htmx-request {
-  padding-right: 80px;
+.fl-btn-outlined.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-outlined.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-outlined.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-outlined.htmx-request::after {
+.fl-btn-outlined.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-green-500);
 }
@@ -10178,13 +10194,15 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
-.fl-btn-tertiary.htmx-request {
-  padding-right: 80px;
+.fl-btn-tertiary.btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
 }
-.fl-btn-tertiary.htmx-request.fl-btn-sm {
-  padding-right: 48px !important;
+.fl-btn-tertiary.btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
-.fl-btn-tertiary.htmx-request::after {
+.fl-btn-tertiary.btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-green-500);
 }
@@ -10644,6 +10662,9 @@ progress {
 }
 .fl-input label {
   display: block;
+}
+.fl-input .help-text {
+  min-height: 24px;
 }
 .fl-input .fl-input-icon {
   position: absolute;

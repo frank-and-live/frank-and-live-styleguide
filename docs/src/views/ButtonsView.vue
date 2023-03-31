@@ -102,25 +102,26 @@
     </div>
   </div>
 
-  <h5>HTMX spinner</h5>
-  <p>HTMX will add a <code>htmx-request</code> class while it is fetching</p>
+  <h5>Button spinner</h5>
+  <p><code>btn-spinner</code> class while it is fetching</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-white htmx-request">Button</button>
+        <button class="fl-btn fl-btn-filled-white btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-green htmx-request">Button</button>
+        <button class="fl-btn fl-btn-filled-green btn-spinner">Button</button>
       </div>
     </div>
   </div>
+  <div></div>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-white htmx-request">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-white btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-green htmx-request">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-green btn-spinner">Button</button>
       </div>
     </div>
   </div>

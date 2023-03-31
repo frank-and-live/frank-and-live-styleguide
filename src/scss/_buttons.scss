@@ -91,7 +91,7 @@ $buttons: (
   align-items: center;
   border-style: solid;
   border-width: 2px;
-  // border-radius: 40px;
+  border-radius: 2px;
   border-color: var(--fl-color-grey-700);
   background-color: transparent;
   padding: 14px 32px 16px 32px;
@@ -126,11 +126,10 @@ $buttons: (
   //   right: 56px !important;
   // }
 
-  // HTMX will add a "htmx-request" class while it is fetching
-  &.htmx-request::after {
+  &.btn-spinner::after {
     position: absolute;
-    top: 49%;
-    right: 38px;
+    top: 47%;
+    right: 14px;
     display: block;
     width: 18px;
     height: 18px;
@@ -145,8 +144,8 @@ $buttons: (
     content: ' ';
   }
 
-  &.htmx-request:hover::after {
-    right: 38px !important;
+  &.btn-spinner:hover::after {
+    right: 14px !important;
   }
 }
 
@@ -154,9 +153,10 @@ $buttons: (
   border-width: 1px !important;
   font-size: 16px !important;
   padding: 11px 24px 11px 24px !important;
+  border-radius: 1px;
 
   &::after {
-    right: 24px !important;
+    right: 14px !important;
     width: 8px !important;
     height: 8px !important;
     margin-top: -4px !important;
@@ -167,17 +167,17 @@ $buttons: (
     right: 32px !important;
   }
 
-  &.htmx-request::after {
+  &.btn-spinner::after {
     border-width: 1px;
     margin-top: -2px !important;
   }
 
-  &.htmx-request:hover::after {
-    right: 24px !important;
+  &.btn-spinner:hover::after {
+    right: 14px !important;
   }
 }
 
-.htmx-request {
+.btn-spinner {
   pointer-events: none;
 }
 
