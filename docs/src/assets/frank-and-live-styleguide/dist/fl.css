@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&display=swap");
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -9835,13 +9835,13 @@ progress {
   align-items: center;
   border-style: solid;
   border-width: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
   border-color: var(--fl-color-grey-700);
   background-color: transparent;
   padding: 14px 32px 16px 32px;
   line-height: 1;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   outline: none;
   white-space: nowrap;
   text-decoration: none;
@@ -9875,7 +9875,7 @@ progress {
   border-width: 1px !important;
   font-size: 16px !important;
   padding: 11px 24px 11px 24px !important;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 .fl-btn-sm::after {
   right: 14px !important;
@@ -10282,6 +10282,37 @@ progress {
 }
 .fl-check-input[disabled] ~ label, .fl-check-input:disabled ~ label {
   color: var(--fl-color-grey-500);
+}
+
+.fl-switch input {
+  width: 80px;
+  height: 40px;
+  vertical-align: top;
+  background-color: var(--fl-color-white);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  border: 2px solid var(--fl-color-grey-500);
+  border-radius: 2em;
+  appearance: none;
+  transition: background-position 0.15s ease-in-out;
+}
+.fl-switch input:checked {
+  border-color: var(--fl-color-green-500);
+  background-color: var(--fl-color-green-500);
+  background-position: right center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
+}
+.fl-switch.fl-switch-sm input {
+  width: 48px;
+  height: 24px;
+}
+.fl-switch label {
+  line-height: 40px !important;
+}
+.fl-switch.fl-switch-sm label {
+  line-height: 24px !important;
 }
 
 :root {
@@ -11070,7 +11101,7 @@ progress {
   background-position: right 2px center;
 }
 .fl-select select:hover:not([disabled]) {
-  border-bottom: 2px solid var(--fl-color-blue-500);
+  border-bottom: 2px solid var(--fl-color-green-500);
 }
 .fl-select select:focus:not([disabled]), .fl-select select:active:not([disabled]) {
   outline: none;
@@ -11099,8 +11130,11 @@ progress {
 .fl-select.fl-select-error select {
   border-bottom: 2px solid var(--fl-color-orange-500) !important;
 }
-.fl-select.fl-select-error + .help-text {
+.fl-select.fl-select-error .help-text {
   color: var(--fl-color-orange-500) !important;
+}
+.fl-select .help-text {
+  min-height: 24px;
 }
 
 .fl-shadow-s {
@@ -11194,7 +11228,7 @@ progress {
 }
 
 h1 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 120px !important;
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
@@ -11208,7 +11242,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 80px !important;
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
@@ -11222,7 +11256,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 56px !important;
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
@@ -11236,7 +11270,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 40px !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
@@ -11250,7 +11284,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
@@ -11264,7 +11298,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+  font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
@@ -11338,7 +11372,7 @@ p {
   }
 
   h1 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 56px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
@@ -11352,7 +11386,7 @@ p {
   }
 
   h2 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 56px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
@@ -11366,7 +11400,7 @@ p {
   }
 
   h3 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 49px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
@@ -11380,7 +11414,7 @@ p {
   }
 
   h4 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 32px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
@@ -11394,7 +11428,7 @@ p {
   }
 
   h5 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 32px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
@@ -11408,7 +11442,7 @@ p {
   }
 
   h6 {
-    font-family: "Josefin Sans", "work sans", arial, helvetica, sans-serif !important;
+    font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 24px !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;

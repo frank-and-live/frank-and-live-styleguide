@@ -73,4 +73,19 @@
       </label>
     </div>
   </div>
+  <h5>Switches</h5>
+  <div class="d-inline-block mb-5 border fl-border-grey-500 p-5">
+    <div class="fl-switch mt-3">
+      <input type="checkbox" id="switch">
+      <label class="fl-fs-p-3 ms-3" for="switch">
+        Default checkbox
+      </label>
+    </div>
+    <div class="fl-switch fl-switch-sm mt-3">
+      <input type="checkbox" id="switch-sm">
+      <label class="fl-fs-p-3 ms-3" for="switch-sm">
+        Default checkbox
+      </label>
+    </div>
+  </div>
 </template>

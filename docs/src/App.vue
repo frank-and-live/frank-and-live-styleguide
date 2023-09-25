@@ -43,6 +43,9 @@
               <router-link to="/colors/">Colors</router-link>
             </li>
             <li>
+              <router-link to="/emailsignatures/">Email Signatures</router-link>
+            </li>
+            <li>
               <router-link to="/inputs/">Inputs</router-link>
             </li>
             <li>

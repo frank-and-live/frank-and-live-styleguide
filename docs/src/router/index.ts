@@ -4,6 +4,7 @@ import BadgesView from '@/views/BadgesView.vue'
 import ButtonsView from '@/views/ButtonsView.vue'
 import ChecksView from '@/views/ChecksView.vue'
 import ColorsView from '@/views/ColorsView.vue'
+import EmailSignaturesView from '@/views/EmailSignaturesView.vue'
 import HomeView from '@/views/HomeView.vue'
 import InputsView from '@/views/InputsView.vue'
 import LogosView from '@/views/LogosView.vue'
@@ -47,6 +48,11 @@ const router = createRouter({
       path: '/colors',
       name: 'colors',
       component: ColorsView,
+    },
+    {
+      path: '/emailsignatures',
+      name: 'emailsignatures',
+      component: EmailSignaturesView,
     },
     {
       path: '/inputs',
