@@ -10674,7 +10674,7 @@ progress {
 .fl-input input:hover:not([disabled]):not(.disabled), .fl-input input:hover:not([disabled]):not(.disabled),
 .fl-input textarea:hover:not([disabled]):not(.disabled),
 .fl-input textarea:hover:not([disabled]):not(.disabled) {
-  border-bottom: 2px solid var(--fl-color-blue-500);
+  border-bottom: 2px solid var(--fl-color-green-500);
 }
 .fl-input input::placeholder, .fl-input input::placeholder,
 .fl-input textarea::placeholder,
