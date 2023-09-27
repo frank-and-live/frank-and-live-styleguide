@@ -44,8 +44,8 @@
     "voca": "^1.4.0"
   },
   "dependencies": {
-    "@lottiefiles/lottie-interactivity": "^1.6.1",
-    "@lottiefiles/lottie-player": "^1.5.7",
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
+    "@lottiefiles/lottie-player": "^1.7.1",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.0"
   }
