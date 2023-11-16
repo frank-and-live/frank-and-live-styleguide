@@ -22,6 +22,16 @@ $buttons: (
     'fg': var(--fl-color-green-500),
     'fg-disabled': var(--fl-color-grey-500),
   ),
+  'filled-black': (
+    'bg': var(--fl-color-grey-700),
+    'bg-disabled': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-grey-700)},
+    'border-disabled-color': transparent,
+    'dot': var(--fl-color-white),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-white),
+    'fg-disabled': var(--fl-color-grey-500),
+  ),
   'filled-brown': (
     'bg': var(--fl-color-brown-500),
     'bg-disabled': var(--fl-color-grey-300),
@@ -91,7 +101,7 @@ $buttons: (
   align-items: center;
   border-style: solid;
   border-width: 2px;
-  border-radius: 4px;
+  border-radius: 8px;
   border-color: var(--fl-color-grey-700);
   background-color: transparent;
   padding: 14px 32px 16px 32px;
@@ -153,7 +163,7 @@ $buttons: (
   border-width: 1px !important;
   font-size: 16px !important;
   padding: 11px 24px 11px 24px !important;
-  border-radius: 2px;
+  border-radius: 4px;
 
   &::after {
     right: 14px !important;

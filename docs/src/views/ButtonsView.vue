@@ -24,6 +24,18 @@
     </div>
   </div>
 
+  <p>Filled black</p>
+  <div class="d-inline-block mb-5 border fl-border-grey-500">
+    <div class="d-flex">
+      <div class="p-5">
+        <button class="fl-btn fl-btn-filled-black">Button</button>
+      </div>
+      <div class="p-5">
+        <button class="fl-btn fl-btn-filled-black" disabled>Button</button>
+      </div>
+    </div>
+  </div>
+
   <p>Filled green</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
