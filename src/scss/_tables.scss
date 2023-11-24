@@ -2,14 +2,14 @@
 
 .fl-table {
   --fl-table-color: inherit;
-  --fl-table-bg: var(--fl-color-white);
+  --fl-table-bg: transparent;
   --fl-table-border-color: var(--fl-color-grey-300);
-  --fl-table-accent-bg: var(--fl-color-white);
+  --fl-table-accent-bg: transparent;
   --fl-table-striped-color: var(--fl-color-grey-500);
   --fl-table-striped-bg: var(--fl-color-grey-500);
   --fl-table-active-color: inherit;
   --fl-table-active-bg: var(--fl-color-grey-300);
-  --fl-table-hover-color: inherig;
+  --fl-table-hover-color: inherit;
   --fl-table-hover-bg: var(--fl-color-grey-300);
 
   width: 100%;
