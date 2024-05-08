@@ -3,10 +3,13 @@
 	<div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-white">
     <div class="d-flex align-items-center">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-green">Regular</button>
+        <button class="fl-btn">Regular</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-green">Small</button>
+        <button class="fl-btn fl-btn-sm">Small</button>
+      </div>
+      <div class="p-5">
+        <button class="fl-btn fl-btn-lg">Large</button>
       </div>
     </div>
   </div>
@@ -56,6 +59,18 @@
       </div>
       <div class="p-5">
         <button class="fl-btn fl-btn-outlined" disabled>Button</button>
+      </div>
+    </div>
+  </div>
+
+  <p>Rounded</p>
+  <div class="d-inline-block mb-5 border fl-border-grey-500">
+    <div class="d-flex">
+      <div class="p-5">
+        <button class="fl-btn fl-btn-rounded">Button</button>
+      </div>
+      <div class="p-5">
+        <button class="fl-btn fl-btn-rounded" disabled>Button</button>
       </div>
     </div>
   </div>
@@ -115,14 +130,14 @@
   </div>
 
   <h5>Button spinner</h5>
-  <p><code>btn-spinner</code> class while it is fetching</p>
+  <p><code>fl-btn-spinner</code> class while it is fetching</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-white btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-filled-white fl-btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-green btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-filled-green fl-btn-spinner">Button</button>
       </div>
     </div>
   </div>
@@ -130,10 +145,10 @@
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-white btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-white fl-btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-green btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-filled-green fl-btn-spinner">Button</button>
       </div>
     </div>
   </div>

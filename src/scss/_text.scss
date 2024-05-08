@@ -1,6 +1,6 @@
 @use 'sass:map';
 @import 'lib/vars';
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap';
 
 $font-family-display: 'Poppins', 'work sans', arial, helvetica, sans-serif;
 $font-family: 'Lato', 'work sans', arial, helvetica, sans-serif;
@@ -10,12 +10,12 @@ $font-specs: (
     class-name: 'fl-fs-1',
     values: (
       font-family: $font-family-display,
-      font-size: 120px,
-      font-size-mobile: 56px,
-      font-weight: 700,
+      font-size: 32px,
+      font-size-mobile: 32px,
+      font-weight: 600,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
-      line-height: 100%,
+      line-height: 36px,
       line-height-mobile: 100%,
     ),
   ),
@@ -24,9 +24,9 @@ $font-specs: (
     class-name: 'fl-fs-2',
     values: (
       font-family: $font-family-display,
-      font-size: 80px,
-      font-size-mobile: 56px,
-      font-weight: 700,
+      font-size: 26px,
+      font-size-mobile: 26px,
+      font-weight: 600,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
       line-height: 100%,
@@ -38,9 +38,9 @@ $font-specs: (
     class-name: 'fl-fs-3',
     values: (
       font-family: $font-family-display,
-      font-size: 56px,
-      font-size-mobile: 49px,
-      font-weight: 700,
+      font-size: 14px,
+      font-size-mobile: 14px,
+      font-weight: 600,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
       line-height: 100%,
@@ -133,8 +133,8 @@ $font-specs: (
     class-name: 'fl-fs-p',
     values: (
       font-family: $font-family,
-      font-size: 24px,
-      font-size-mobile: 24px,
+      font-size: 18px,
+      font-size-mobile: 18px,
       font-weight: 400,
       letter-spacing: -0.02em,
       letter-spacing-mobile: -0.02em,
@@ -146,8 +146,8 @@ $font-specs: (
     class-name: 'fl-fs-p-s',
     values: (
       font-family: $font-family,
-      font-size: 16px,
-      font-size-mobile: 16px,
+      font-size: 14px,
+      font-size-mobile: 14px,
       font-weight: 400,
       letter-spacing: normal,
       letter-spacing-mobile: normal,

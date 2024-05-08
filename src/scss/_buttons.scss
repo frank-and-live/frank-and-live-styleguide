@@ -99,44 +99,36 @@ $buttons: (
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
+  color: var(--fl-color-white);
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
   border-color: var(--fl-color-grey-700);
-  background-color: transparent;
-  padding: 14px 32px 16px 32px;
-  line-height: 1;
-  font-size: 24px;
-  font-weight: 400;
+  background-color: var(--fl-color-grey-700);
+  padding: 12px 22px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 600;
   outline: none;
   white-space: nowrap;
   text-decoration: none;
 
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    background-color: var(--fl-color-grey-300);
+    border-color: var(--fl-color-grey-300);
+    color: var(--fl-color-grey-500);
+  }
+
   // Get rid of underline for a-tags and add pointer to eg. label
   &:hover {
+    background-color: var(--fl-color-black);
     text-decoration: none;
     cursor: pointer;
   }
 
-  // The dot
-  // &::after {
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 40px;
-  //   display: block;
-  //   width: 16px;
-  //   height: 16px;
-  //   margin-top: -8px;
-  //   border-radius: 16px;
-  //   content: ' ';
-  //   transition: all 0.3s cubic-bezier(0,0,0,1);
-  // }
-  
-  // &:hover::after {
-  //   right: 56px !important;
-  // }
-
-  &.btn-spinner::after {
+  &.fl-btn-spinner::after {
     position: absolute;
     top: 47%;
     right: 14px;
@@ -154,16 +146,17 @@ $buttons: (
     content: ' ';
   }
 
-  &.btn-spinner:hover::after {
+  &.fl-btn-spinner:hover::after {
     right: 14px !important;
   }
 }
 
 .fl-btn-sm {
   border-width: 1px !important;
-  font-size: 16px !important;
-  padding: 11px 24px 11px 24px !important;
+  font-size: 14px !important;
+  padding: 6px 14px !important;
   border-radius: 4px;
+  font-weight: 600;
 
   &::after {
     right: 14px !important;
@@ -177,17 +170,26 @@ $buttons: (
     right: 32px !important;
   }
 
-  &.btn-spinner::after {
+  &.fl-btn-spinner::after {
     border-width: 1px;
     margin-top: -2px !important;
   }
 
-  &.btn-spinner:hover::after {
+  &.fl-btn-spinner:hover::after {
     right: 14px !important;
   }
 }
 
-.btn-spinner {
+.fl-btn-lg {
+  padding: 16px 26px !important;
+  border-radius: 4px;
+}
+
+.fl-btn-rounded {
+  border-radius: 50px;
+}
+
+.fl-btn-spinner {
   pointer-events: none;
 }
 
