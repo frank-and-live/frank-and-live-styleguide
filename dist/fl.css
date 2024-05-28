@@ -10457,7 +10457,7 @@ progress {
   color: var(--fl-color-grey-500) !important;
 }
 .fl-btn-filled-red:hover {
-  background-color: var(--fl-color-grey-300) !important;
+  background-color: !important;
   text-decoration: none;
   cursor: pointer;
 }
@@ -10498,7 +10498,7 @@ progress {
   color: var(--fl-color-grey-500) !important;
 }
 .fl-btn-filled-yellow:hover {
-  background-color: var(--fl-color-grey-300) !important;
+  background-color: !important;
   text-decoration: none;
   cursor: pointer;
 }

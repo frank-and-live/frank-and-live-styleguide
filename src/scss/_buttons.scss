@@ -38,7 +38,6 @@ $buttons: (
   'filled-red': (
     'bg': var(--fl-color-red-500),
     'bg-disabled': var(--fl-color-grey-300),
-    'bg-hover': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-red-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-white),
@@ -49,7 +48,6 @@ $buttons: (
   'filled-yellow': (
     'bg': var(--fl-color-yellow-500),
     'bg-disabled': var(--fl-color-grey-300),
-    'bg-hover': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-yellow-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-black),
