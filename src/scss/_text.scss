@@ -1,6 +1,6 @@
 @use 'sass:map';
 @import 'lib/vars';
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap';
 
 $font-family-display: 'Poppins', 'work sans', arial, helvetica, sans-serif;
 $font-family: 'Lato', 'work sans', arial, helvetica, sans-serif;
@@ -12,7 +12,7 @@ $font-specs: (
       font-family: $font-family-display,
       font-size: 32px,
       font-size-mobile: 32px,
-      font-weight: 600,
+      font-weight: 500,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
       line-height: 36px,
@@ -26,7 +26,7 @@ $font-specs: (
       font-family: $font-family-display,
       font-size: 26px,
       font-size-mobile: 26px,
-      font-weight: 600,
+      font-weight: 500,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
       line-height: 100%,
@@ -40,7 +40,7 @@ $font-specs: (
       font-family: $font-family-display,
       font-size: 14px,
       font-size-mobile: 14px,
-      font-weight: 600,
+      font-weight: 500,
       letter-spacing: -0.03em,
       letter-spacing-mobile: -0.02em,
       line-height: 100%,

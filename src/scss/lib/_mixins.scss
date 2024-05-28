@@ -18,6 +18,12 @@
       color: #{map.get($props, 'fg-disabled')} !important;
     }
 
+    &:hover {
+      background-color: #{map.get($props, 'bg-hover')} !important;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     &.btn-spinner {
       padding-right: 50px;
       padding-left: 14px;

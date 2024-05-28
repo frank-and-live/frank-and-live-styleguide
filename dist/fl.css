@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10208,7 +10208,7 @@ progress {
   align-items: center;
   color: var(--fl-color-white);
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 8px;
   border-color: var(--fl-color-grey-700);
   background-color: var(--fl-color-grey-700);
@@ -10227,7 +10227,7 @@ progress {
   color: var(--fl-color-grey-500);
 }
 .fl-btn:hover {
-  background-color: var(--fl-color-black);
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
   cursor: pointer;
 }
@@ -10256,7 +10256,7 @@ progress {
   border-width: 1px !important;
   font-size: 14px !important;
   padding: 6px 14px !important;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: 600;
 }
 .fl-btn-sm::after {
@@ -10279,7 +10279,7 @@ progress {
 
 .fl-btn-lg {
   padding: 16px 26px !important;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .fl-btn-rounded {
@@ -10324,6 +10324,11 @@ progress {
   border-color: transparent !important;
   color: inherit !important;
 }
+.fl-btn-link:hover {
+  background-color: tranparent !important;
+  text-decoration: none;
+  cursor: pointer;
+}
 .fl-btn-link.btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
@@ -10358,7 +10363,7 @@ progress {
 .fl-btn-filled-white {
   background-color: var(--fl-color-white) !important;
   border-color: var(--fl-color-white) !important;
-  color: var(--fl-color-green-500) !important;
+  color: var(--fl-color-grey-700) !important;
 }
 .fl-btn-filled-white.fl-btn-sm {
   border-width: 1px !important;
@@ -10368,6 +10373,11 @@ progress {
   background-color: var(--fl-color-grey-300) !important;
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-filled-white:hover {
+  background-color: var(--fl-color-grey-300) !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .fl-btn-filled-white.btn-spinner {
   padding-right: 50px;
@@ -10379,11 +10389,11 @@ progress {
 }
 .fl-btn-filled-white.btn-spinner::after {
   background-color: transparent !important;
-  border-color: var(--fl-color-green-500);
+  border-color: var(--fl-color-grey-700);
 }
 
 .fl-btn-filled-white::after {
-  background-color: var(--fl-color-green-500) !important;
+  background-color: var(--fl-color-grey-700) !important;
 }
 
 .fl-btn-filled-white:disabled::after,
@@ -10404,6 +10414,11 @@ progress {
   background-color: var(--fl-color-grey-300) !important;
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-filled-black:hover {
+  background-color: var(--fl-color-black) !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .fl-btn-filled-black.btn-spinner {
   padding-right: 50px;
@@ -10427,42 +10442,6 @@ progress {
   background-color: var(--fl-color-grey-500) !important;
 }
 
-.fl-btn-filled-brown {
-  background-color: var(--fl-color-brown-500) !important;
-  border-color: var(--fl-color-brown-500) !important;
-  color: var(--fl-color-white) !important;
-}
-.fl-btn-filled-brown.fl-btn-sm {
-  border-width: 1px !important;
-}
-.fl-btn-filled-brown:disabled, .fl-btn-filled-brown.disabled {
-  pointer-events: none;
-  background-color: var(--fl-color-grey-300) !important;
-  border-color: transparent !important;
-  color: var(--fl-color-grey-500) !important;
-}
-.fl-btn-filled-brown.btn-spinner {
-  padding-right: 50px;
-  padding-left: 14px;
-}
-.fl-btn-filled-brown.btn-spinner.fl-btn-sm {
-  padding-right: 30px !important;
-  padding-left: 18px !important;
-}
-.fl-btn-filled-brown.btn-spinner::after {
-  background-color: transparent !important;
-  border-color: var(--fl-color-white);
-}
-
-.fl-btn-filled-brown::after {
-  background-color: var(--fl-color-white) !important;
-}
-
-.fl-btn-filled-brown:disabled::after,
-.fl-btn-filled-brown.disabled::after {
-  background-color: var(--fl-color-grey-500) !important;
-}
-
 .fl-btn-filled-red {
   background-color: var(--fl-color-red-500) !important;
   border-color: var(--fl-color-red-500) !important;
@@ -10476,6 +10455,11 @@ progress {
   background-color: var(--fl-color-grey-300) !important;
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-filled-red:hover {
+  background-color: var(--fl-color-grey-300) !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .fl-btn-filled-red.btn-spinner {
   padding-right: 50px;
@@ -10513,6 +10497,11 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
+.fl-btn-filled-yellow:hover {
+  background-color: var(--fl-color-grey-300) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
 .fl-btn-filled-yellow.btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
@@ -10549,6 +10538,11 @@ progress {
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
 }
+.fl-btn-filled-green:hover {
+  background-color: !important;
+  text-decoration: none;
+  cursor: pointer;
+}
 .fl-btn-filled-green.btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
@@ -10573,8 +10567,8 @@ progress {
 
 .fl-btn-outlined {
   background-color: transparent !important;
-  border-color: var(--fl-color-green-500) !important;
-  color: var(--fl-color-green-500) !important;
+  border-color: var(--fl-color-grey-700) !important;
+  color: var(--fl-color-grey-700) !important;
 }
 .fl-btn-outlined.fl-btn-sm {
   border-width: 1px !important;
@@ -10584,6 +10578,11 @@ progress {
   background-color: transparent !important;
   border-color: var(--fl-color-grey-500) !important;
   color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-outlined:hover {
+  background-color: var(--fl-color-grey-300) !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .fl-btn-outlined.btn-spinner {
   padding-right: 50px;
@@ -10595,11 +10594,11 @@ progress {
 }
 .fl-btn-outlined.btn-spinner::after {
   background-color: transparent !important;
-  border-color: var(--fl-color-green-500);
+  border-color: var(--fl-color-grey-700);
 }
 
 .fl-btn-outlined::after {
-  background-color: var(--fl-color-green-500) !important;
+  background-color: var(--fl-color-grey-700) !important;
 }
 
 .fl-btn-outlined:disabled::after,
@@ -10610,7 +10609,7 @@ progress {
 .fl-btn-tertiary {
   background-color: transparent !important;
   border-color: transparent !important;
-  color: var(--fl-color-green-500) !important;
+  color: var(--fl-color-grey-700) !important;
 }
 .fl-btn-tertiary.fl-btn-sm {
   border-width: 1px !important;
@@ -10620,6 +10619,11 @@ progress {
   background-color: transparent !important;
   border-color: transparent !important;
   color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-tertiary:hover {
+  background-color: var(--fl-color-grey-300) !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .fl-btn-tertiary.btn-spinner {
   padding-right: 50px;
@@ -10631,11 +10635,11 @@ progress {
 }
 .fl-btn-tertiary.btn-spinner::after {
   background-color: transparent !important;
-  border-color: var(--fl-color-green-500);
+  border-color: var(--fl-color-grey-700);
 }
 
 .fl-btn-tertiary::after {
-  background-color: var(--fl-color-green-500) !important;
+  background-color: var(--fl-color-grey-700) !important;
 }
 
 .fl-btn-tertiary:disabled::after,
@@ -11118,7 +11122,7 @@ progress {
 .fl-input input:hover:not([disabled]):not(.disabled), .fl-input input:hover:not([disabled]):not(.disabled),
 .fl-input textarea:hover:not([disabled]):not(.disabled),
 .fl-input textarea:hover:not([disabled]):not(.disabled) {
-  border-bottom: 2px solid var(--fl-color-green-500);
+  border-bottom: 2px solid var(--fl-color-grey-700);
 }
 .fl-input input::placeholder, .fl-input input::placeholder,
 .fl-input textarea::placeholder,
@@ -11674,7 +11678,7 @@ progress {
 h1 {
   font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 32px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   letter-spacing: -0.03em !important;
   line-height: 36px !important;
 }
@@ -11688,7 +11692,7 @@ h1 {
 h2 {
   font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 26px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   letter-spacing: -0.03em !important;
   line-height: 100% !important;
 }
@@ -11702,7 +11706,7 @@ h2 {
 h3 {
   font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
   font-size: 14px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   letter-spacing: -0.03em !important;
   line-height: 100% !important;
 }
@@ -11818,7 +11822,7 @@ p {
   h1 {
     font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 32px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     letter-spacing: -0.02em !important;
     line-height: 100% !important;
   }
@@ -11832,7 +11836,7 @@ p {
   h2 {
     font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 26px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     letter-spacing: -0.02em !important;
     line-height: 100% !important;
   }
@@ -11846,7 +11850,7 @@ p {
   h3 {
     font-family: "Poppins", "work sans", arial, helvetica, sans-serif !important;
     font-size: 14px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     letter-spacing: -0.02em !important;
     line-height: 120% !important;
   }

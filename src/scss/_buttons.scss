@@ -5,6 +5,7 @@ $buttons: (
   'link': (
     'bg': transparent,
     'bg-disabled': transparent,
+    'bg-hover': tranparent,
     'border-color': transparent,
     'border-disabled-color': transparent,
     'dot': none,
@@ -15,27 +16,19 @@ $buttons: (
   'filled-white': (
     'bg': var(--fl-color-white),
     'bg-disabled': var(--fl-color-grey-300),
+    'bg-hover': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-white)},
     'border-disabled-color': transparent,
-    'dot': var(--fl-color-green-500),
+    'dot': var(--fl-color-grey-700),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-green-500),
+    'fg': var(--fl-color-grey-700),
     'fg-disabled': var(--fl-color-grey-500),
   ),
   'filled-black': (
     'bg': var(--fl-color-grey-700),
     'bg-disabled': var(--fl-color-grey-300),
+    'bg-hover': var(--fl-color-black),
     'border-color': #{var(--fl-color-grey-700)},
-    'border-disabled-color': transparent,
-    'dot': var(--fl-color-white),
-    'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-white),
-    'fg-disabled': var(--fl-color-grey-500),
-  ),
-  'filled-brown': (
-    'bg': var(--fl-color-brown-500),
-    'bg-disabled': var(--fl-color-grey-300),
-    'border-color': #{var(--fl-color-brown-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-white),
     'dot-disabled': var(--fl-color-grey-500),
@@ -45,6 +38,7 @@ $buttons: (
   'filled-red': (
     'bg': var(--fl-color-red-500),
     'bg-disabled': var(--fl-color-grey-300),
+    'bg-hover': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-red-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-white),
@@ -55,6 +49,7 @@ $buttons: (
   'filled-yellow': (
     'bg': var(--fl-color-yellow-500),
     'bg-disabled': var(--fl-color-grey-300),
+    'bg-hover': var(--fl-color-grey-300),
     'border-color': #{var(--fl-color-yellow-500)},
     'border-disabled-color': transparent,
     'dot': var(--fl-color-black),
@@ -75,21 +70,23 @@ $buttons: (
   'outlined': (
     'bg': transparent,
     'bg-disabled': transparent,
-    'border-color': #{var(--fl-color-green-500)},
+    'bg-hover': var(--fl-color-grey-300),
+    'border-color': #{var(--fl-color-grey-700)},
     'border-disabled-color': #{var(--fl-color-grey-500)},
-    'dot': var(--fl-color-green-500),
+    'dot': var(--fl-color-grey-700),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-green-500),
+    'fg': var(--fl-color-grey-700),
     'fg-disabled': var(--fl-color-grey-500),
   ),
   'tertiary': (
     'bg': transparent,
     'bg-disabled': transparent,
+    'bg-hover': var(--fl-color-grey-300),
     'border-color': transparent,
     'border-disabled-color': transparent,
-    'dot': var(--fl-color-green-500),
+    'dot': var(--fl-color-grey-700),
     'dot-disabled': var(--fl-color-grey-500),
-    'fg': var(--fl-color-green-500),
+    'fg': var(--fl-color-grey-700),
     'fg-disabled': var(--fl-color-grey-500),
   ),
 );
@@ -101,7 +98,7 @@ $buttons: (
   align-items: center;
   color: var(--fl-color-white);
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 8px;
   border-color: var(--fl-color-grey-700);
   background-color: var(--fl-color-grey-700);
@@ -123,7 +120,7 @@ $buttons: (
 
   // Get rid of underline for a-tags and add pointer to eg. label
   &:hover {
-    background-color: var(--fl-color-black);
+    background-color: rgba(0, 0, 0, 50);
     text-decoration: none;
     cursor: pointer;
   }
@@ -155,7 +152,7 @@ $buttons: (
   border-width: 1px !important;
   font-size: 14px !important;
   padding: 6px 14px !important;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: 600;
 
   &::after {
@@ -182,7 +179,7 @@ $buttons: (
 
 .fl-btn-lg {
   padding: 16px 26px !important;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .fl-btn-rounded {
