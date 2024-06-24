@@ -1,6 +1,6 @@
 <template>
   <h5 class="mb-3">Sizes</h5>
-	<div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-white">
+  <div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-white">
     <div class="d-flex align-items-center">
       <div class="p-5">
         <button class="fl-btn">Regular</button>
@@ -116,13 +116,20 @@
     <div class="d-flex align-items-center">
       <div class="p-5">
         <button class="fl-btn">
-          <img class="me-3" src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo--favicon--white--dotted.svg">
+          <img
+            class="me-3"
+            src="/src/assets/frank-and-live-styleguide/static/logos/logo--favicon--white--dotted.svg"
+          />
           Connect
         </button>
       </div>
       <div class="p-5">
         <button class="fl-btn fl-btn-sm">
-          <img class="me-3" style="height: 16px;" src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo--favicon--white--dotted.svg">
+          <img
+            class="me-3"
+            style="height: 16px"
+            src="/src/assets/frank-and-live-styleguide/static/logos/logo--favicon--white--dotted.svg"
+          />
           Connect
         </button>
       </div>
@@ -153,5 +160,3 @@
     </div>
   </div>
 </template>
-
-

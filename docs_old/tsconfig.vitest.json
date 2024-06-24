@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "compilerOptions": {
+    "allowJs": true,
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom"],
+    "verbatimModuleSyntax": true,
+    "ignoreDeprecations": "5.0"
+  }
+}

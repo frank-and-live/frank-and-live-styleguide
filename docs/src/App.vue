@@ -1,24 +1,28 @@
 <template>
-  <nav class="navbar navbar-expand-md p-3 px-5 fl-bg-white" style="z-index: 124;">
+  <nav class="navbar navbar-expand-md p-3 px-5 fl-bg-white" style="z-index: 124">
     <div class="container-fluid">
       <div class="navbar-brand">
         <router-link class="d-block" to="/">
           <img
             class="w-auto"
             style="height: 30px"
-            src="/src/assets/frank-and-live-styleguide/dist/static/logos/logo_fnl.svg"
-            alt="FRANK & LIVE"
+            src="/src/assets/frank-and-live-styleguide/static/logos/logo_swifder.svg"
+            alt="swifder"
           />
         </router-link>
       </div>
       <span class="flex-grow-1"></span>
-      <button class="fl-btn fl-btn-link fl-fs-p d-md-none me-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="show-collapsed">
-          Menu
-        </span>
-        <span class="hide-collapsed">
-          Close
-        </span>
+      <button
+        class="fl-btn fl-btn-link fl-fs-p d-md-none me-4 collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="show-collapsed"> Menu </span>
+        <span class="hide-collapsed"> Close </span>
       </button>
     </div>
   </nav>
@@ -72,7 +76,7 @@
           </ul>
         </div>
       </nav>
-      <main class="col-md-8 col-lg-9 col-xxl-10 mt-5 ">
+      <main class="col-md-8 col-lg-9 col-xxl-10 mt-5">
         <router-view />
       </main>
     </div>
@@ -80,24 +84,24 @@
 </template>
 
 <style scoped>
-  .sidebar-sticky {
-    position: sticky;
-    top: 0;
-    height: calc(100vh - 65px);
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  ul.sidebar-menu {
-    list-style: none;
-  }
-  ul.sidebar-menu li {
-    position: relative;
-    padding: 8px 0;
-  }
-  ul.sidebar-menu li a {
-    text-decoration: none;
-  }
-  ul.sidebar-menu li a.active {
-    color: var(--fl-color-green-500);
-  }
+.sidebar-sticky {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 65px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul.sidebar-menu {
+  list-style: none;
+}
+ul.sidebar-menu li {
+  position: relative;
+  padding: 8px 0;
+}
+ul.sidebar-menu li a {
+  text-decoration: none;
+}
+ul.sidebar-menu li a.active {
+  color: var(--fl-color-green-500);
+}
 </style>
