@@ -144,7 +144,7 @@
         <button class="fl-btn fl-btn-filled-white fl-btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-green fl-btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-spinner">Button</button>
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@
         <button class="fl-btn fl-btn-sm fl-btn-filled-white fl-btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-sm fl-btn-filled-green fl-btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-sm fl-btn-spinner">Button</button>
       </div>
     </div>
   </div>

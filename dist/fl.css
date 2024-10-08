@@ -10061,6 +10061,10 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
+.fl-btn.fl-btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
+}
 .fl-btn.fl-btn-spinner::after {
   position: absolute;
   top: 47%;
@@ -10098,6 +10102,10 @@ progress {
 }
 .fl-btn-sm:hover::after {
   right: 32px !important;
+}
+.fl-btn-sm.fl-btn-spinner {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
 }
 .fl-btn-sm.fl-btn-spinner::after {
   border-width: 1px;

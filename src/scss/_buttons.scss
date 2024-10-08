@@ -123,6 +123,11 @@ $buttons: (
     cursor: pointer;
   }
 
+  &.fl-btn-spinner {
+    padding-right: 50px;
+    padding-left: 14px;
+  }
+
   &.fl-btn-spinner::after {
     position: absolute;
     top: 47%;
@@ -163,6 +168,11 @@ $buttons: (
   
   &:hover::after {
     right: 32px !important;
+  }
+
+  &.fl-btn-spinner {
+    padding-right: 30px !important;
+    padding-left: 18px !important
   }
 
   &.fl-btn-spinner::after {
