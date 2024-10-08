@@ -24,17 +24,17 @@
       cursor: pointer;
     }
 
-    &.btn-spinner {
+    &.fl-btn-spinner {
       padding-right: 50px;
       padding-left: 14px;
     }
 
-    &.btn-spinner.fl-btn-sm {
+    &.fl-btn-spinner.fl-btn-sm {
       padding-right: 30px !important;
       padding-left: 18px !important;
     }
 
-    &.btn-spinner::after {
+    &.fl-btn-spinner::after {
       background-color: transparent !important;
       border-color: #{map.get($props, 'dot')};
     }

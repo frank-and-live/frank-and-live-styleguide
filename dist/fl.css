@@ -10159,15 +10159,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-link.btn-spinner {
+.fl-btn-link.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-link.btn-spinner.fl-btn-sm {
+.fl-btn-link.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-link.btn-spinner::after {
+.fl-btn-link.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: none;
 }
@@ -10209,15 +10209,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-filled-white.btn-spinner {
+.fl-btn-filled-white.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-filled-white.btn-spinner.fl-btn-sm {
+.fl-btn-filled-white.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-filled-white.btn-spinner::after {
+.fl-btn-filled-white.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-grey-700);
 }
@@ -10250,15 +10250,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-filled-black.btn-spinner {
+.fl-btn-filled-black.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-filled-black.btn-spinner.fl-btn-sm {
+.fl-btn-filled-black.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-filled-black.btn-spinner::after {
+.fl-btn-filled-black.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10291,15 +10291,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-filled-red.btn-spinner {
+.fl-btn-filled-red.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-filled-red.btn-spinner.fl-btn-sm {
+.fl-btn-filled-red.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-filled-red.btn-spinner::after {
+.fl-btn-filled-red.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10332,15 +10332,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-filled-yellow.btn-spinner {
+.fl-btn-filled-yellow.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-filled-yellow.btn-spinner.fl-btn-sm {
+.fl-btn-filled-yellow.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-filled-yellow.btn-spinner::after {
+.fl-btn-filled-yellow.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-black);
 }
@@ -10373,15 +10373,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-filled-green.btn-spinner {
+.fl-btn-filled-green.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-filled-green.btn-spinner.fl-btn-sm {
+.fl-btn-filled-green.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-filled-green.btn-spinner::after {
+.fl-btn-filled-green.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-white);
 }
@@ -10414,15 +10414,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-outlined.btn-spinner {
+.fl-btn-outlined.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-outlined.btn-spinner.fl-btn-sm {
+.fl-btn-outlined.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-outlined.btn-spinner::after {
+.fl-btn-outlined.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-grey-700);
 }
@@ -10455,15 +10455,15 @@ progress {
   text-decoration: none;
   cursor: pointer;
 }
-.fl-btn-tertiary.btn-spinner {
+.fl-btn-tertiary.fl-btn-spinner {
   padding-right: 50px;
   padding-left: 14px;
 }
-.fl-btn-tertiary.btn-spinner.fl-btn-sm {
+.fl-btn-tertiary.fl-btn-spinner.fl-btn-sm {
   padding-right: 30px !important;
   padding-left: 18px !important;
 }
-.fl-btn-tertiary.btn-spinner::after {
+.fl-btn-tertiary.fl-btn-spinner::after {
   background-color: transparent !important;
   border-color: var(--fl-color-grey-700);
 }
