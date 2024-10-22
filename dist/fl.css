@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap';
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -10600,7 +10600,9 @@ progress {
   --fl-color-green-500: #009007;
   --fl-color-green-700: #31734b;
   --fl-color-orange-500: #fe4a01;
+  --fl-color-red-100: #f9dedb;
   --fl-color-red-500: #c43025;
+  --fl-color-red-700: #5f140f;
   --fl-color-pink-500: #e2929a;
 }
 
@@ -10844,6 +10846,22 @@ progress {
   border-color: #fe4a01 !important;
 }
 
+.fl-bg-red-100 {
+  background-color: #f9dedb !important;
+}
+
+.fl-fg-red-100 {
+  color: #f9dedb !important;
+}
+
+.fl-fg-red-100 path {
+  fill: #f9dedb !important;
+}
+
+.fl-border-red-100 {
+  border-color: #f9dedb !important;
+}
+
 .fl-bg-red-500 {
   background-color: #c43025 !important;
 }
@@ -10858,6 +10876,22 @@ progress {
 
 .fl-border-red-500 {
   border-color: #c43025 !important;
+}
+
+.fl-bg-red-700 {
+  background-color: #5f140f !important;
+}
+
+.fl-fg-red-700 {
+  color: #5f140f !important;
+}
+
+.fl-fg-red-700 path {
+  fill: #5f140f !important;
+}
+
+.fl-border-red-700 {
+  border-color: #5f140f !important;
 }
 
 .fl-bg-pink-500 {
@@ -11505,7 +11539,7 @@ progress {
   --fl-fs-4: 40px;
   --fl-fs-5: 32px;
   --fl-fs-6: 24px;
-  --fl-fs-hero: 200px;
+  --fl-fs-hero: 75px;
   --fl-fs-p-xl: 56px;
   --fl-fs-p-l: 32px;
   --fl-fs-p: 18px;
@@ -11598,9 +11632,9 @@ h6 {
 }
 
 .fl-fs-hero {
-  font-size: 200px !important;
+  font-size: 75px !important;
   letter-spacing: -0.03em !important;
-  line-height: 90% !important;
+  line-height: 95px !important;
 }
 
 .fl-fs-p-xl {

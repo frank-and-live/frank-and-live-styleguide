@@ -16,8 +16,14 @@
       <div class="color-circle fl-bg-brown-500 fl-fg-white">
         <h6>Brown 500</h6>
       </div>
+      <div class="color-circle fl-bg-red-100 fl-fg-white">
+        <h6>Red 100</h6>
+      </div>
       <div class="color-circle fl-bg-red-500 fl-fg-white">
         <h6>Red 500</h6>
+      </div>
+      <div class="color-circle fl-bg-red-700 fl-fg-white">
+        <h6>Red 700</h6>
       </div>
       <div class="color-circle fl-bg-pink-500">
         <h6>Pink 500</h6>
