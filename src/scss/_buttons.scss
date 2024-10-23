@@ -76,6 +76,17 @@ $buttons: (
     'fg': var(--fl-color-grey-700),
     'fg-disabled': var(--fl-color-grey-500),
   ),
+  'outlined-white': (
+    'bg': transparent,
+    'bg-disabled': transparent,
+    'bg-hover': var(--fl-color-grey-700),
+    'border-color': #{var(--fl-color-white)},
+    'border-disabled-color': #{var(--fl-color-grey-500)},
+    'dot': var(--fl-color-white),
+    'dot-disabled': var(--fl-color-grey-500),
+    'fg': var(--fl-color-white),
+    'fg-disabled': var(--fl-color-grey-500),
+  ),
   'tertiary': (
     'bg': transparent,
     'bg-disabled': transparent,

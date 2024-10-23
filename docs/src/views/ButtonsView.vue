@@ -63,6 +63,18 @@
     </div>
   </div>
 
+  <p>Outlined white</p>
+  <div class="d-inline-block mb-5 border fl-border-grey-500 fl-bg-black">
+    <div class="d-flex">
+      <div class="p-5">
+        <button class="fl-btn fl-btn-outlined-white">Button</button>
+      </div>
+      <div class="p-5">
+        <button class="fl-btn fl-btn-outlined-white" disabled>Button</button>
+      </div>
+    </div>
+  </div>
+
   <p>Rounded</p>
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">

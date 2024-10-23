@@ -10472,6 +10472,47 @@ progress {
   background-color: var(--fl-color-grey-500) !important;
 }
 
+.fl-btn-outlined-white {
+  background-color: transparent !important;
+  border-color: var(--fl-color-white) !important;
+  color: var(--fl-color-white) !important;
+}
+.fl-btn-outlined-white.fl-btn-sm {
+  border-width: 1px !important;
+}
+.fl-btn-outlined-white:disabled, .fl-btn-outlined-white.disabled {
+  pointer-events: none;
+  background-color: transparent !important;
+  border-color: var(--fl-color-grey-500) !important;
+  color: var(--fl-color-grey-500) !important;
+}
+.fl-btn-outlined-white:hover {
+  background-color: var(--fl-color-grey-700) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fl-btn-outlined-white.fl-btn-spinner {
+  padding-right: 50px;
+  padding-left: 14px;
+}
+.fl-btn-outlined-white.fl-btn-spinner.fl-btn-sm {
+  padding-right: 30px !important;
+  padding-left: 18px !important;
+}
+.fl-btn-outlined-white.fl-btn-spinner::after {
+  background-color: transparent !important;
+  border-color: var(--fl-color-white);
+}
+
+.fl-btn-outlined-white::after {
+  background-color: var(--fl-color-white) !important;
+}
+
+.fl-btn-outlined-white:disabled::after,
+.fl-btn-outlined-white.disabled::after {
+  background-color: var(--fl-color-grey-500) !important;
+}
+
 .fl-btn-tertiary {
   background-color: transparent !important;
   border-color: transparent !important;
