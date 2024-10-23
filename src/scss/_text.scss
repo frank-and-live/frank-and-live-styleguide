@@ -1,9 +1,9 @@
 @use 'sass:map';
 @import 'lib/vars';
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap';
 
 $font-family-display: 'Poppins', 'work sans', arial, helvetica, sans-serif;
-$font-family: 'Lato', 'work sans', arial, helvetica, sans-serif;
+$font-family: 'Roboto', 'work sans', arial, helvetica, sans-serif;
 $font-specs: (
   (
     default-element: 'h1',
