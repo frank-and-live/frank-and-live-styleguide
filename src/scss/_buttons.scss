@@ -129,6 +129,7 @@ $buttons: (
 
   // Get rid of underline for a-tags and add pointer to eg. label
   &:hover {
+    color: var(--fl-color-white);
     background-color: rgba(0, 0, 0, 50);
     text-decoration: none;
     cursor: pointer;

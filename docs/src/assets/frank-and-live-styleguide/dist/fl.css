@@ -10085,6 +10085,7 @@ progress {
   color: var(--fl-color-grey-500);
 }
 .fl-btn:hover {
+  color: var(--fl-color-white);
   background-color: rgb(0, 0, 0);
   text-decoration: none;
   cursor: pointer;
