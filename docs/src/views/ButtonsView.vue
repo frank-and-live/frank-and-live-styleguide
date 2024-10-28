@@ -115,10 +115,10 @@
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <a href="#" class="fl-btn fl-btn-filled-green">Link</a>
+        <a href="#" class="fl-btn">Link</a>
       </div>
       <div class="p-5">
-        <a class="fl-btn fl-btn-filled-green disabled">Link</a>
+        <a class="fl-btn disabled">Link</a>
       </div>
     </div>
   </div>
