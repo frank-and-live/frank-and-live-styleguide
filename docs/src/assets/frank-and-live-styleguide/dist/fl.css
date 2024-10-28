@@ -11701,19 +11701,19 @@ h6 {
 
 .fl-fs-hero {
   font-size: 75px !important;
-  letter-spacing: 0.03em !important;
+  letter-spacing: -0.03em !important;
   line-height: 95px !important;
 }
 
 .fl-fs-p-xl {
   font-size: 56px !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: normal !important;
   line-height: 100% !important;
 }
 
 .fl-fs-p-l {
   font-size: 32px !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: normal !important;
   line-height: 120% !important;
 }
 
@@ -11721,13 +11721,13 @@ p {
   font-family: "Lato", "work sans", arial, helvetica, sans-serif !important;
   font-size: 18px !important;
   font-weight: 400 !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: normal !important;
   line-height: 120% !important;
 }
 
 .fl-fs-p {
   font-size: 18px !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: normal !important;
   line-height: 120% !important;
 }
 
@@ -11832,29 +11832,29 @@ p {
   }
   .fl-fs-hero {
     font-size: 64px !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: -0.02em !important;
     line-height: 100% !important;
   }
   .fl-fs-p-xl {
     font-size: 32px !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: normal !important;
     line-height: 120% !important;
   }
   .fl-fs-p-l {
     font-size: 28px !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: normal !important;
     line-height: 120% !important;
   }
   p {
     font-family: "Lato", "work sans", arial, helvetica, sans-serif !important;
     font-size: 18px !important;
     font-weight: 400 !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: normal !important;
     line-height: 120% !important;
   }
   .fl-fs-p {
     font-size: 18px !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: normal !important;
     line-height: 120% !important;
   }
   .fl-fs-p-s {
