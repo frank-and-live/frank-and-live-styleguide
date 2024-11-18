@@ -72,7 +72,7 @@ $buttons: (
     'border-color': #{var(--fl-color-grey-700)},
     'border-disabled-color': #{var(--fl-color-grey-500)},
     'dot': var(--fl-color-grey-700),
-    'dot-disabled': var(--fl-color-grey-500),
+    'dot-disabled': var(--fl-color-white),
     'fg': var(--fl-color-grey-700),
     'fg-disabled': var(--fl-color-grey-500),
   ),
@@ -168,14 +168,14 @@ $buttons: (
   font-size: 14px !important;
   padding: 6px 14px !important;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 400;
 
   &::after {
     right: 14px !important;
-    width: 8px !important;
-    height: 8px !important;
-    margin-top: -4px !important;
-    border-radius: 8px !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-top: -3px !important;
+    border-radius: 10px !important;
   }
   
   &:hover::after {

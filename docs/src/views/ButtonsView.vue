@@ -153,10 +153,10 @@
   <div class="d-inline-block mb-5 border fl-border-grey-500">
     <div class="d-flex">
       <div class="p-5">
-        <button class="fl-btn fl-btn-filled-white fl-btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-outlined fl-btn-spinner">Button</button>
       </div>
       <div class="p-5">
-        <button class="fl-btn fl-btn-spinner">Button</button>
+        <button class="fl-btn fl-btn-outlined fl-btn-spinner" disabled>Button</button>
       </div>
     </div>
   </div>
